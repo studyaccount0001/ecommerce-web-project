@@ -1,0 +1,25 @@
+button {
+    background: tomato;
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--gray12);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+    min-width: 120px;
+    max-width: 150px;
+    max-height: 40px;
+}
+
+button:hover {
+    background: #d44228;
+    color: var(--gray5);
+}
+
+.btn-medium {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.95em;
+    font-weight: 600;
+}
