@@ -1,0 +1,117 @@
+@import url(./global.css);
+@import url(./colors.css);
+@import url(./text-style.css);
+@import url(./button.css);
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 10%;
+    background: var(--dark);
+    z-index: 1; /* Traz a header para frente no eixo-z. Ou seja, tampa o que está em baixo. */
+}
+
+nav a,
+i {
+    color: var(--light);
+}
+
+nav a:hover,
+i:hover {
+    color: var(--primary);
+}
+
+.acc-shop-button {
+    display: flex;
+    gap: 2em;
+}
+
+.acc-shop-button .shopping-account-item {
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.logo {
+    fill: var(--light);
+    left: 50%;
+    position: absolute; /* Centraliza a logo no centro da navbar. */
+    transform: translateX(-50%); /* Centraliza a logo no centro da navbar. */
+    cursor: pointer;
+    height: 2rem;
+}
+
+.logo:hover {
+    fill: var(--primary);
+}
+
+.hero {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    padding: 1rem;
+    /* border: 1px solid blue; */
+    /* margin-left: 64px;
+    margin-right: 64px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 97.5vh; /* 97.5 faz deixar aquela sobra entre o fim da hero e início do footer. */
+}
+
+.hero-text {
+    position: relative;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.section-bottom-btn {
+    background: var(--dark);
+    position: absolute; /* Se tirar esse position absolute, dá problema. */
+    bottom: 10vh; /* Eleva 1 rem pra cima do bottom. */
+    left: 50%; /* Deixa centralizado. */
+    transform: translateX(-50%); /* Centraliza o botão */
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    padding: 2rem 64px 2rem 64px;
+    height: auto;
+    background: var(--primary);
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    height: auto;
+}
+
+.contact-box img {
+    height: 2rem;
+}
+
+.footer-site-categories {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.footer-site-categories a {
+    color: var(--dark);
+}
+
+.footer-site-categories a:hover {
+    color: var(--info);
+}
