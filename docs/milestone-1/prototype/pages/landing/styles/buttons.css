@@ -1,8 +1,8 @@
 button {
-    background: tomato;
+    background: var(--primary);
     border: none;
     border-radius: 0.25rem;
-    color: var(--gray12);
+    color: var(--dark);
     cursor: pointer;
     font-weight: 500;
     font-size: 0.9em;
@@ -14,7 +14,7 @@ button {
 }
 
 button:hover {
-    background: #d44228;
+    background: var(--primary-hover);
     color: var(--gray5);
 }
 
