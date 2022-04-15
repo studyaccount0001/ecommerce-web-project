@@ -3,10 +3,8 @@
 ![Logo](https://github.com/opaulosoares/ecommerce-web-project/blob/main/docs/branding/banner-github.png)
 
 Esse projeto foi implementado como projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
-This is the final assignment for the 2022's Web Development class.
-It's divided in 3 main milestones, which can be checked through the available git branches.
 
-| Identifier | Full name |
+| Identificador | Nome |
 | --- | --- |
 | 11884713 | Paulo Henrique de Souza Soares |
 | 11795680 | Natan Henrique Sanches |
