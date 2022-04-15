@@ -1,6 +1,6 @@
 button {
     cursor: pointer;
-    padding: 0.35rem 1rem;
+    padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.25rem;
     border: 1px solid var(--dark);
@@ -19,10 +19,22 @@ button {
 }
 
 .btn-primary:hover {
-    background: var(--primary-hover);
+    background: none;
+    border: 1px solid var(--primary);
+    color: var(--primary);
 }
 
 .btn-primary:hover i {
+    color: var(--dark);
+}
+
+.btn-primary:active {
+    background: hsla(0, 100%, 60%, 0.3);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-primary:active i {
     color: var(--dark);
 }
 
@@ -33,5 +45,11 @@ button {
 .btn-secondary:hover {
     border: 1px solid var(--secondary-hover);
     background: var(--info);
+    color: var(--dark);
+}
+
+.btn-secondary:active {
+    border: 1px solid var(--secondary-hover);
+    background: none;
     color: var(--dark);
 }
