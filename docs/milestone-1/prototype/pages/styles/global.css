@@ -50,3 +50,9 @@ a:hover,
 a:active {
     color: inherit;
 }
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}

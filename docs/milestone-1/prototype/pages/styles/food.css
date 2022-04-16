@@ -50,6 +50,21 @@
     color: var(--dark);
 }
 
+.category-search {
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.category-search input {
+    border: 1px solid var(--accent2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.category-search i {
+    color: var(--dark);
+}
+
 .product-list-box {
     height: 100%;
     width: 100%;
