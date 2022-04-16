@@ -67,3 +67,11 @@ O _e-commerce_ desenvolvido para a disciplina foi o de uma _pet-shop_, _Fluffsho
   - **Responsividade:** O site foi implementado de maneira que pudesse ser exibido, sem perda de informação ou deformação dos componentes, em qualquer tipo de tela. 
 
   - **Acessibilidade:** O site conta com um mecanismo de mudança de cores no estilo claro/escuro, respeitando os padrões visuais WCAG, de forma que torne-se acessível a usuários com problemas de visão.
+
+## Diagramas de navegação
+
+Uma versão simplificada do diagrama de navegação do site pode ser vista a seguir.
+![](./docs/milestone-1/navigation-diagram/simple-nav-diagram.png)
+
+Além desta, também foi produzido um diagrama sendo uma versão mais detalhada da navegação, de maneira que pudesse ser visto o relacionamento entre as páginas com maior precisão.
+![](./docs/milestone-1/navigation-diagram/full-nav-diagram.png)
