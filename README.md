@@ -18,6 +18,7 @@ Esse projeto foi implementado como projeto final para a disciplina de Introduç�
 ## Protótipos
 
 [Link para o projeto no Figma](https://www.figma.com/file/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=53%3A162)
+[Link para navegação do site](https://www.figma.com/proto/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=56%3A823&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=56%3A823)
 
 ## Documento de Requisitos
 
