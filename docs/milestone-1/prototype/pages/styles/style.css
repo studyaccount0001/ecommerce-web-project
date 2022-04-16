@@ -3,10 +3,28 @@
 @import url(./text-style.css);
 @import url(./button.css);
 
+:root {
+    --navbar-height: 8vh;
+}
+
+.container {
+    /* Isso dá certo pois no global.css o body está com position: absolute */
+    margin-top: var(--navbar-height);
+    transition: all 0.5s ease-in-out;
+}
+
+.active-page {
+    color: var(--info);
+    outline: 1px solid var(--info);
+    border-radius: 0.5rem;
+}
+
 header {
+    top: 0;
     position: fixed;
     width: 100%;
     z-index: 1; /* Traz a header para frente no eixo-z. Ou seja, tampa o que está em baixo. */
+    color: white;
 }
 
 .top-info-promotion-box {
@@ -25,6 +43,17 @@ header {
     align-items: center;
     padding: 0.75rem 10%;
     background: var(--dark);
+    height: var(--navbar-height);
+}
+
+.logo-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-link svg {
+    height: 4vh;
 }
 
 nav a,
@@ -144,6 +173,11 @@ i:hover {
 }
 
 footer {
+    /*  */
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     display: flex;
     justify-content: space-around;
     align-items: top;

@@ -7,6 +7,10 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
+.btn-large {
+    height: 4vh;
+}
+
 .btn-rounded {
     width: 3rem;
     height: 3rem;
