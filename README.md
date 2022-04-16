@@ -27,17 +27,14 @@ Esse projeto foi implementado como projeto final para a disciplina de Introduç�
 ### Administrador
 
 - No sistema, o administrador pode **inserir** novos produtos para serem exibidos na loja.
-- No sistema, o administrador pode **modificar** um produto já existente na loja. Os atributos que podem ser modificados são **nome**, **foto**, **descrição**, **preço**, **pets recomendados**, **quantidade em estoque** e **quantidade vendida**.
-- No sistema, o administrador pode **procurar** por um produto já existente na loja.
+- No sistema, o administrador tem acesso às **listas** contendo os produtos ativos e inativos na loja.
 - No sistema, o administrador pode **remover** um produto existente na loja.
 - No sistema, o administrador pode dar o cargo de **Administrador** a um usuário **comum**.
 
 ### Usuário comum
 
-- No sistema, o usuário pode se **registrar** através de um **e-mail** e **senha**. Ao ser registrado, o usuário possui um perfil próprio no site.
-- No sistema, um usuário comum pode cadastrar um número de cartão de crédito.
-- No sistema, um usuário pode **adicionar** produtos à lista de desejos.
-- No sistema, um usuário pode **remover** produtos da lista de desejos.
+- No sistema, o usuário pode se **registrar** utilizando seu **e-mail**, **senha**, **nome**, **endereço** e **telefone**. Ao ser registrado, o usuário possui um perfil próprio no site ligado com seu **e-mail** e **senha**.
+- No sistema, um usuário comum pode **cadastrar** um número de cartão de crédito para pagamento.
 - No sistema, um usuário comum pode **procurar** por produtos através de uma barra de pesquisa.
 - No sistema, um usuário comum pode **adicionar** produtos desejados ao carrinho de compras.
 - No sistema, um usuário comum pode **remover** produtos do carrinho de compras.
@@ -57,11 +54,11 @@ Esse projeto foi implementado como projeto final para a disciplina de Introduç�
 
 O _e-commerce_ desenvolvido para a disciplina foi o de uma _pet-shop_, _Fluffshop_, caracterizada em produtos para cães e gatos (alimentos, suprimentos e petiscos). 
 
-- O site da _Fluffshop_ permite que o usuário veja a listagem de produtos disponíveis em estoque. Com isso, o usuário pode comprar algum produto colocando-o no carrinho e especificando sua quantidade. Em seguida, o pagamento é feito através de um número de cartão de crédito. Após processada a compra e efetuado o pagamento, o carrinho é esvaziado. Além disso, o usuário possui uma lista de desejos própria, permitindo que itens sejam adicionados nela.
+- O site da _Fluffshop_ permite que o usuário veja a listagem de produtos disponíveis em estoque. Com isso, o usuário pode comprar algum produto colocando-o no carrinho e especificando sua quantidade. Em seguida, o pagamento é feito através de um número de cartão de crédito. Após processada a compra e efetuado o pagamento, o carrinho é esvaziado.
 
 - No sistema, estão cadastrados os produtos do tipo _Food_ (alimentos), _Supplies_ (suprimentos) e _Treats_ (petiscos). Cada produto distinto possui a sua própria página e esses podem ser filtrados de acordo com seu tipo. Dentre os produtos, são exibidos uma foto, seu nome, sua descrição e seu preço. Além disso, o usuário pode conferir uma seção que indica para qual tipo de _pet_ aquele produto é recomendado.
   
-- A manutenção dos produtos cadastrados é feita pelo administrador, que pode alterar/procurar/inserir/remover produtos no banco de dados do sistema. O administrador é responsável pela manutenção do sistema como um todo, e também de gerir outros administradores.
+- A manutenção dos produtos cadastrados é feita pelo administrador, que pode listar/inserir/remover produtos no banco de dados do sistema. O administrador é responsável pela manutenção do sistema como um todo, e também por gerir outros administradores.
 
 - O sistema também possui recursos não-funcionais, englobando contextos como **usabilidade**, **responsividade** e **acessibilidade**:
   
