@@ -4,13 +4,30 @@
 
 Esse projeto foi implementado como projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
 
+- [Detalhes](#detalhes)
+    - [Detalhes Empresa](#detalhes-da-empresa-fictícia)
+- [Protótipos](#protótipos)
+- [Documentos de requisitos](#documento-de-requisitos)
+    - [Administrador](#administrador)
+    - [Usuário Comum](#usuário-comum)
+    - [Funcionalidade Extra](#funcionalidade-extra)
+    - [Requisitos Não Funcionais](#requisitos-não-funcionais)
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Diagramas de Navegação](#diagramas-de-navegação)
+
+
+- [Detalhes](#detalhes)
+- [Detalhes](#detalhes)
+
+## Detalhes
+
 | Identificador | Nome                           |
 | ------------- | ------------------------------ |
 | 11884713      | Paulo Henrique de Souza Soares |
 | 11795680      | Natan Henrique Sanches         |
 | 10873365      | Álvaro José Lopes              |
 
-## Detalhes da empresa fictícia
+### Detalhes da empresa fictícia
 
 -   **Nome:** Fluffshop
 -   **Área de atuação:** _Pet-shop_ para cães e gatos.
