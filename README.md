@@ -1,6 +1,6 @@
 # E-Commerce Web Project
 
-![Logo](https://github.com/opaulosoares/ecommerce-web-project/blob/main/docs/branding/banner-github.png)
+![Logo](https://github.com/opaulosoares/ecommerce-web-project/blob/main/branding/banner-github.png)
 
 Esse projeto foi implementado como projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
 
@@ -76,7 +76,7 @@ O _e-commerce_ desenvolvido para a disciplina foi o de uma _pet-shop_, _Fluffsho
 ## Diagramas de navegação
 
 Uma versão simplificada do diagrama de navegação do site pode ser vista a seguir.
-![](./docs/milestone-1/navigation-diagram/simple-nav-diagram.png)
+![](./milestone-1/navigation-diagram/simple-nav-diagram.png)
 
 Além desta, também foi produzido um diagrama sendo uma versão mais detalhada da navegação, de maneira que pudesse ser visto o relacionamento entre as páginas com maior precisão.
-![](./docs/milestone-1/navigation-diagram/full-nav-diagram.png)
+![](./milestone-1/navigation-diagram/full-nav-diagram.png)
