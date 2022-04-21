@@ -1,4 +1,4 @@
-# E-Commerce Web Project
+# fluffshop - E-commerce Web Project
 
 ![Logo](https://github.com/opaulosoares/ecommerce-web-project/blob/main/branding/banner-github.png)
 
@@ -51,8 +51,6 @@ Link para o protótipo com navegação completa no Figma
 <a href="https://opaulosoares.github.io/ecommerce-web-project/" target="_blank">
 Protótipo em HTML + CSS
 </a>
-
-[]()
 
 -   3 páginas feitas em HTML e CSS, como especificado.
     -   "Homepage", "Login" e "Foods"
