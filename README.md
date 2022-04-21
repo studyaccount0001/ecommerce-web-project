@@ -30,9 +30,19 @@ Esse projeto foi implementado como projeto final para a disciplina de Introduç�
 
 ## Protótipos
 
+### Figma
 [Link para o projeto no Figma](https://www.figma.com/file/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=53%3A162)
 
-[Link para navegação do site](https://www.figma.com/proto/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=56%3A823&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=56%3A823)
+### Navegação Figma
+[Link para o protótipo com navegação completa no Figma](https://www.figma.com/proto/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=56%3A823&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=56%3A823)
+
+### HTML/CSS
+- 3 páginas feitas em HTML e CSS, como especificado.
+    - "Homepage", "Login" e "Foods"
+- Botões interativos nesse protótipo:
+    - "Sign In"
+    - "Foods"
+[HTML+CSS](https://opaulosoares.github.io/ecommerce-web-project/)
 
 ## Documento de Requisitos
 
