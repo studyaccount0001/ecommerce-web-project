@@ -1,4 +1,4 @@
-# E-Commerce Web Project
+# fluffshop - E-commerce Web Project
 
 ![Logo](https://github.com/opaulosoares/ecommerce-web-project/blob/main/branding/banner-github.png)
 
