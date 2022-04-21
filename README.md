@@ -15,10 +15,6 @@ Esse projeto foi implementado como projeto final para a disciplina de Introduç�
 - [Descrição do Projeto](#descrição-do-projeto)
 - [Diagramas de Navegação](#diagramas-de-navegação)
 
-
-- [Detalhes](#detalhes)
-- [Detalhes](#detalhes)
-
 ## Detalhes
 
 | Identificador | Nome                           |
