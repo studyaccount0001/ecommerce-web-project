@@ -4,16 +4,20 @@
 
 Esse projeto foi implementado como projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
 
-- [Detalhes](#detalhes)
-    - [Detalhes Empresa](#detalhes-da-empresa-fictícia)
-- [Protótipos](#protótipos)
-- [Documentos de requisitos](#documento-de-requisitos)
+- [E-Commerce Web Project](#e-commerce-web-project)
+  - [Detalhes](#detalhes)
+    - [Detalhes da empresa fictícia](#detalhes-da-empresa-fictícia)
+  - [Protótipos](#protótipos)
+    - [Figma](#figma)
+    - [Navegação Figma](#navegação-figma)
+    - [HTML/CSS](#htmlcss)
+  - [Documento de Requisitos](#documento-de-requisitos)
     - [Administrador](#administrador)
-    - [Usuário Comum](#usuário-comum)
-    - [Funcionalidade Extra](#funcionalidade-extra)
-    - [Requisitos Não Funcionais](#requisitos-não-funcionais)
-- [Descrição do Projeto](#descrição-do-projeto)
-- [Diagramas de Navegação](#diagramas-de-navegação)
+    - [Usuário comum](#usuário-comum)
+      - [Funcionalidade extra](#funcionalidade-extra)
+    - [Requisitos não-funcionais](#requisitos-não-funcionais)
+  - [Descrição do projeto](#descrição-do-projeto)
+  - [Diagramas de navegação](#diagramas-de-navegação)
 
 ## Detalhes
 
@@ -31,20 +35,30 @@ Esse projeto foi implementado como projeto final para a disciplina de Introduç�
 ## Protótipos
 
 ### Figma
-[Link para o projeto no Figma](https://www.figma.com/file/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=53%3A162)
+
+<a href="https://www.figma.com/file/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=53%3A162" target="_blank">
+Link para o projeto no Figma
+</a>
 
 ### Navegação Figma
-[Link para o protótipo com navegação completa no Figma](https://www.figma.com/proto/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=56%3A823&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=56%3A823)
+
+<a href="https://www.figma.com/proto/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=56%3A823&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=56%3A823" target="_blank">
+Link para o protótipo com navegação completa no Figma
+</a>
 
 ### HTML/CSS
-[Protótipo em HTML + CSS](https://opaulosoares.github.io/ecommerce-web-project/)
-- 3 páginas feitas em HTML e CSS, como especificado.
-    - "Homepage", "Login" e "Foods"
-- Botões interativos nesse protótipo:
-    - "Sign In"
-    - "Foods"
 
+<a href="https://opaulosoares.github.io/ecommerce-web-project/" target="_blank">
+Protótipo em HTML + CSS
+</a>
 
+[]()
+
+-   3 páginas feitas em HTML e CSS, como especificado.
+    -   "Homepage", "Login" e "Foods"
+-   Botões interativos nesse protótipo:
+    -   "Sign In"
+    -   "Foods"
 
 ## Documento de Requisitos
 
