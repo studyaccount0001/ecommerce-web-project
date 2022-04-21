@@ -52,8 +52,6 @@ Link para o protótipo com navegação completa no Figma
 Protótipo em HTML + CSS
 </a>
 
-[]()
-
 -   3 páginas feitas em HTML e CSS, como especificado.
     -   "Homepage", "Login" e "Foods"
 -   Botões interativos nesse protótipo:
