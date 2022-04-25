@@ -4,7 +4,7 @@
 
 Esse projeto foi implementado como projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
 
-- [E-Commerce Web Project](#e-commerce-web-project)
+- [fluffshop - E-commerce Web Project](#fluffshop---e-commerce-web-project)
   - [Detalhes](#detalhes)
     - [Detalhes da empresa fictícia](#detalhes-da-empresa-fictícia)
   - [Protótipos](#protótipos)
@@ -113,7 +113,7 @@ O _e-commerce_ desenvolvido para a disciplina foi o de uma _pet-shop_, _Fluffsho
 ## Diagramas de navegação
 
 Uma versão simplificada do diagrama de navegação do site pode ser vista a seguir.
-![](./milestone-1-prototype/navigation-diagram/simple-nav-diagram.png)
+![](./milestone-1/navigation-diagram/simple-nav-diagram.png)
 
 Além desta, também foi produzido um diagrama sendo uma versão mais detalhada da navegação, de maneira que pudesse ser visto o relacionamento entre as páginas com maior precisão.
-![](./milestone-1-prototype/navigation-diagram/full-nav-diagram.png)
+![](./milestone-1/navigation-diagram/full-nav-diagram.png)
