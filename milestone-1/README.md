@@ -46,4 +46,4 @@ Além desta, também foi produzido um diagrama sendo uma versão mais detalhada 
 
 Tabela de cores com seus respectivos testes de acessibilidade no padrao WCAG 2.0.
 
-![](./img/colors.png)
+<img src="./img/colors.png" alt="colors" style="width:500px"/>
