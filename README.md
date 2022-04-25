@@ -58,12 +58,6 @@ Protótipo em HTML + CSS
     -   "Sign In"
     -   "Foods"
 
-## Tabela de Cores
-
-Tabela de cores com seus respectivos testes de acessibilidade no padrao WCAG 2.0.
-
-![](./milestone-1/img/colors.png)
-
 ## Documento de Requisitos
 
 -   O sistema deve possuir dois tipos de usuários: **comum e administrador**.
