@@ -11,6 +11,7 @@ Esse projeto foi implementado como projeto final para a disciplina de Introduç�
     - [Figma](#figma)
     - [Navegação Figma](#navegação-figma)
     - [HTML/CSS](#htmlcss)
+  - [Tabela de Cores](#tabela-de-cores)
   - [Documento de Requisitos](#documento-de-requisitos)
     - [Administrador](#administrador)
     - [Usuário comum](#usuário-comum)
@@ -57,6 +58,12 @@ Protótipo em HTML + CSS
 -   Botões interativos nesse protótipo:
     -   "Sign In"
     -   "Foods"
+
+## Tabela de Cores
+
+Tabela de cores com seus respectivos testes de acessibilidade no padrao WCAG 2.0.
+
+![](./milestone-1/img/colors.png)
 
 ## Documento de Requisitos
 

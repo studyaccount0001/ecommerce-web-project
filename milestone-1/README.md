@@ -41,3 +41,9 @@ Uma versão simplificada do diagrama de navegação do site pode ser vista a seg
 Além desta, também foi produzido um diagrama sendo uma versão mais detalhada da navegação, de maneira que pudesse ser visto o relacionamento entre as páginas com maior precisão.
 
 ![](./navigation-diagram/full-nav-diagram.png)
+
+## Tabela de Cores
+
+Tabela de cores com seus respectivos testes de acessibilidade no padrao WCAG 2.0.
+
+![](./milestone-1/img/colors.png)
