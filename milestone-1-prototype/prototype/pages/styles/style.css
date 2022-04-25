@@ -46,6 +46,11 @@ header {
     height: var(--navbar-height);
 }
 
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
 .logo-link a {
     display: flex;
     align-items: center;
