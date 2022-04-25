@@ -122,7 +122,7 @@ O _e-commerce_ desenvolvido para a disciplina foi o de uma _pet-shop_, _Fluffsho
 
 Diagrama de navegação do admin.
 
-![](./milestone-1/navigation-diagram/admin-navigation-diagram.png)
+![](./milestone-1/navigation-diagram/admin-nav-diagram.png)
 
 Uma versão simplificada do diagrama de navegação do site pode ser vista a seguir.
 
