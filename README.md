@@ -4,21 +4,20 @@
 
 Esse projeto foi implementado como projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
 
-- [fluffshop - E-commerce Web Project](#fluffshop---e-commerce-web-project)
-  - [Detalhes](#detalhes)
-    - [Detalhes da empresa fictícia](#detalhes-da-empresa-fictícia)
-  - [Protótipos](#protótipos)
-    - [Figma](#figma)
-    - [Navegação Figma](#navegação-figma)
-    - [HTML/CSS](#htmlcss)
-  - [Tabela de Cores](#tabela-de-cores)
-  - [Documento de Requisitos](#documento-de-requisitos)
-    - [Administrador](#administrador)
-    - [Usuário comum](#usuário-comum)
-      - [Funcionalidade extra](#funcionalidade-extra)
-    - [Requisitos não-funcionais](#requisitos-não-funcionais)
-  - [Descrição do projeto](#descrição-do-projeto)
-  - [Diagramas de navegação](#diagramas-de-navegação)
+- [Detalhes](#detalhes)
+  - [Detalhes da empresa fictícia](#detalhes-da-empresa-fictícia)
+- [Protótipos](#protótipos)
+  - [Figma](#figma)
+  - [Navegação Figma](#navegação-figma)
+  - [HTML/CSS](#htmlcss)
+- [Tabela de Cores](#tabela-de-cores)
+- [Documento de Requisitos](#documento-de-requisitos)
+  - [Administrador](#administrador)
+  - [Usuário comum](#usuário-comum)
+    - [Funcionalidade extra](#funcionalidade-extra)
+  - [Requisitos não-funcionais](#requisitos-não-funcionais)
+- [Descrição do projeto](#descrição-do-projeto)
+- [Diagramas de navegação](#diagramas-de-navegação)
 
 ## Detalhes
 
