@@ -32,7 +32,7 @@ Protótipo em HTML + CSS
 
 Diagrama de navegação do admin.
 
-![](./navigation-diagram/admin-navigation-diagram.png)
+![](./navigation-diagram/admin-nav-diagram.png)
 
 Uma versão simplificada do diagrama de navegação do site pode ser vista a seguir.
 
