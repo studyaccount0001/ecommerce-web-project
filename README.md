@@ -2,7 +2,7 @@
 
 ![Logo](https://github.com/opaulosoares/ecommerce-web-project/blob/main/branding/banner-github.png)
 
-Esse projeto foi implementado como projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
+Projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
 
 ## Milestones
 - <a href="https://github.com/opaulosoares/ecommerce-web-project/tree/main/milestone-1" target="_blank">
