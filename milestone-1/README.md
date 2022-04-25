@@ -31,10 +31,13 @@ Protótipo em HTML + CSS
 ## Diagramas de navegação
 
 Diagrama de navegação do admin.
+
 ![](./navigation-diagram/admin-navigation-diagram.png)
 
 Uma versão simplificada do diagrama de navegação do site pode ser vista a seguir.
+
 ![](./navigation-diagram/simple-nav-diagram.png)
 
 Além desta, também foi produzido um diagrama sendo uma versão mais detalhada da navegação, de maneira que pudesse ser visto o relacionamento entre as páginas com maior precisão.
+
 ![](./navigation-diagram/full-nav-diagram.png)
