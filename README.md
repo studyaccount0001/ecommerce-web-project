@@ -131,3 +131,12 @@ Uma versão simplificada do diagrama de navegação do site pode ser vista a seg
 Além desta, também foi produzido um diagrama sendo uma versão mais detalhada da navegação, de maneira que pudesse ser visto o relacionamento entre as páginas com maior precisão.
 
 ![](./milestone-1/navigation-diagram/full-nav-diagram.png)
+
+
+## Tabela de Cores
+
+Tabela de cores com seus respectivos testes de acessibilidade no padrao WCAG 2.0.
+
+<img src="./img/colors.png" alt="colors" style="width:500px"/>
+
+Nem todas cores devem passar nos testes, pois nem todas são usadas como texto ou fundo do texto. Contudo, as cores "dark" e "white" estão compatíveis entre si no padrão WCAG 2.0, o que é extrememamente relevante para a acessibilidade do site, visto que serão as cores mais usadas para o texto e fundo do texto. O nome e variações das cores restantes podem ser modificadas durante o progresso do projeto, porém as cores "dark" e "white" serão mantidas, além das cores oficiais da marca. Essa prática de refatoração é bastante comum em projetos como esse, pois o produto encontra-se em constante evolução.
