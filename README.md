@@ -5,7 +5,9 @@
 Esse projeto foi implementado como projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
 
 ## Milestones
-- ![Milestone 1](https://github.com/opaulosoares/ecommerce-web-project/tree/main/milestone-1)
+<a href="https://github.com/opaulosoares/ecommerce-web-project/tree/main/milestone-1" target="_blank">
+Milestone 1
+</a>
 - Milestone 2 - TO-DO
 - Milestone 3 - TO-DO
 
