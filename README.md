@@ -99,6 +99,61 @@ Protótipo em HTML + CSS
 -   O sistema deve ser responsivo e possuir boa usabilidade.
 -   O sistema deve conter funcionalidades de acessibilidade para usuários.
 
+### Dados
+
+- **User**
+  - Email
+  - Password
+  - Full Name
+  - ZIP Code
+  - Address 1 and 2
+  - Phone
+  - Country
+  - State
+  - ZIP Code
+
+**OBS** Admins são inseridos pelo primeiro Admin do sistema por questões de segurança.
+
+- **Food**
+	- **Species**
+		- Dog
+		- Cat
+	- **Age**
+		- Newborn
+		- Adult
+	- **Food type**
+		- Dry
+		- Wet
+		- Frozen
+
+- **Treats**
+	- **Species**
+		- Dog
+		- Cat
+	- **Age**
+		- Newborn
+		- Adult
+	- **Type**
+		- Soft
+		- Chewy
+		- Dental
+
+**Supplies**
+	- **Species**
+		- Dog
+		- Cat
+	- **Age**
+		- Newborn
+		- Adult
+	- **Type**
+    - Clothes & Accessories
+    - Beds
+    - Bowls & Feeders
+    - Collars, Leashes and Harnesses
+    - Gates, Crates & Kernels
+    - Grooming
+    - Toys
+    
 ---
 
 ## Descrição do projeto
