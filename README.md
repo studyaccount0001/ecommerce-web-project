@@ -138,7 +138,7 @@ Protótipo em HTML + CSS
 		- Chewy
 		- Dental
 
-**Supplies**
+- **Supplies**
 	- **Species**
 		- Dog
 		- Cat
