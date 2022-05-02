@@ -146,6 +146,7 @@ Protótipo em HTML + CSS
 		- Newborn
 		- Adult
 	- **Type**
+<<<<<<< HEAD
     - Clothes & Accessories
     - Beds
     - Bowls & Feeders
@@ -153,6 +154,15 @@ Protótipo em HTML + CSS
     - Gates, Crates & Kernels
     - Grooming
     - Toys
+=======
+	    	- Clothes & Accessories
+	    	- Beds
+	    	- Bowls & Feeders
+	    	- Collars, Leashes and Harnesses
+	    	- Gates, Crates & Kernels
+	    	- Grooming
+	    	- Toys
+>>>>>>> 26ea575e645c1419e1277d3b8aa58a0743764e64
     
 ---
 
