@@ -5,27 +5,33 @@
 Projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
 
 ## Milestones
-- <a href="https://github.com/opaulosoares/ecommerce-web-project/tree/main/milestone-1" target="_blank">
-  Milestone 1
-  </a>
-- Milestone 2 - TO-DO
-- Milestone 3 - TO-DO
+
+-   <a href="https://github.com/opaulosoares/ecommerce-web-project/tree/main/milestone-1" target="_blank">
+    Milestone 1
+    </a>
+-   Milestone 2 - TO-DO
+-   Milestone 3 - TO-DO
 
 ## Tópicos
-- [Detalhes](#detalhes)
-  - [Detalhes da empresa fictícia](#detalhes-da-empresa-fictícia)
-- [Protótipos](#protótipos)
-  - [Figma](#figma)
-  - [Navegação Figma](#navegação-figma)
-  - [HTML/CSS](#htmlcss)
-- [Tabela de Cores](#tabela-de-cores)
-- [Documento de Requisitos](#documento-de-requisitos)
-  - [Administrador](#administrador)
-  - [Usuário comum](#usuário-comum)
-    - [Funcionalidade extra](#funcionalidade-extra)
-  - [Requisitos não-funcionais](#requisitos-não-funcionais)
-- [Descrição do projeto](#descrição-do-projeto)
-- [Diagramas de navegação](#diagramas-de-navegação)
+
+- [fluffshop - E-commerce Web Project](#fluffshop---e-commerce-web-project)
+	- [Milestones](#milestones)
+	- [Tópicos](#tópicos)
+	- [Detalhes](#detalhes)
+		- [Detalhes da empresa fictícia](#detalhes-da-empresa-fictícia)
+	- [Protótipos](#protótipos)
+		- [Figma](#figma)
+		- [Navegação Figma](#navegação-figma)
+		- [HTML/CSS](#htmlcss)
+	- [Documento de Requisitos](#documento-de-requisitos)
+		- [Administrador](#administrador)
+		- [Usuário comum](#usuário-comum)
+			- [Funcionalidade extra](#funcionalidade-extra)
+		- [Requisitos não-funcionais](#requisitos-não-funcionais)
+		- [Dados](#dados)
+	- [Descrição do projeto](#descrição-do-projeto)
+	- [Diagramas de navegação](#diagramas-de-navegação)
+	- [Tabela de Cores](#tabela-de-cores)
 
 ## Detalhes
 
@@ -101,79 +107,61 @@ Protótipo em HTML + CSS
 
 ### Dados
 
-- **User**
-  - Email
-  - Password
-  - Full Name
-  - ZIP Code
-  - Address 1 and 2
-  - Phone
-  - Country
-  - State
-  - ZIP Code
+-   **User**
+    -   Email
+    -   Password
+    -   Full Name
+    -   ZIP Code
+    -   Address 1 and 2
+    -   Phone
+    -   Country
+    -   State
+    -   ZIP Code
 
 **OBS** Admins são inseridos pelo primeiro Admin do sistema por questões de segurança.
 
-- **Food**
-	- **Species**
-		- Dog
-		- Cat
-	- **Age**
-		- Newborn
-		- Adult
-	- **Food type**
-		- Dry
-		- Wet
-		- Frozen
+-   **Food**
 
-- **Treats**
-	- **Species**
-		- Dog
-		- Cat
-	- **Age**
-		- Newborn
-		- Adult
-	- **Type**
-		- Soft
-		- Chewy
-		- Dental
+    -   **Species**
+        -   Dog
+        -   Cat
+    -   **Age**
+        -   Newborn
+        -   Adult
+    -   **Food type**
+        -   Dry
+        -   Wet
+        -   Frozen
 
-- **Supplies**
-	- **Species**
-		- Dog
-		- Cat
-	- **Age**
-		- Newborn
-		- Adult
-	- **Type**
-<<<<<<< HEAD
-<<<<<<< HEAD
-    - Clothes & Accessories
-    - Beds
-    - Bowls & Feeders
-    - Collars, Leashes and Harnesses
-    - Gates, Crates & Kernels
-    - Grooming
-    - Toys
-=======
-	    	- Clothes & Accessories
-	    	- Beds
-	    	- Bowls & Feeders
-	    	- Collars, Leashes and Harnesses
-	    	- Gates, Crates & Kernels
-	    	- Grooming
-	    	- Toys
->>>>>>> 26ea575e645c1419e1277d3b8aa58a0743764e64
-=======
-		- Clothes & Accessories
-		- Beds
-		- Bowls & Feeders
-		- Collars, Leashes and Harnesses
-		- Gates, Crates & Kernels
-		- Grooming
-		- Toys
->>>>>>> 6b7a0ab255e77915c4e93368417a42e749a8ddce
-    
+-   **Treats**
+
+    -   **Species**
+        -   Dog
+        -   Cat
+    -   **Age**
+        -   Newborn
+        -   Adult
+    -   **Type**
+        -   Soft
+        -   Chewy
+        -   Dental
+
+-   **Supplies**
+    -   **Species**
+        -   Dog
+        -   Cat
+    -   **Age**
+        -   Newborn
+        -   Adult
+    -   **Type**
+        -   Clothes & Accessories
+        -   Beds
+        -   Bowls & Feeders
+        -   Collars, Leashes and Harnesses
+        -   Gates, Crates & Kernels
+        -   Grooming
+        -   Toys
+
 ---
 
 ## Descrição do projeto
@@ -206,7 +194,6 @@ Uma versão simplificada do diagrama de navegação do site pode ser vista a seg
 Além desta, também foi produzido um diagrama sendo uma versão mais detalhada da navegação, de maneira que pudesse ser visto o relacionamento entre as páginas com maior precisão.
 
 ![](./milestone-1/navigation-diagram/full-nav-diagram.png)
-
 
 ## Tabela de Cores
 
