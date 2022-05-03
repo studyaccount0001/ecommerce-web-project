@@ -138,7 +138,7 @@ Protótipo em HTML + CSS
 		- Chewy
 		- Dental
 
-**Supplies**
+- **Supplies**
 	- **Species**
 		- Dog
 		- Cat
@@ -146,6 +146,7 @@ Protótipo em HTML + CSS
 		- Newborn
 		- Adult
 	- **Type**
+<<<<<<< HEAD
 <<<<<<< HEAD
     - Clothes & Accessories
     - Beds
@@ -163,6 +164,15 @@ Protótipo em HTML + CSS
 	    	- Grooming
 	    	- Toys
 >>>>>>> 26ea575e645c1419e1277d3b8aa58a0743764e64
+=======
+		- Clothes & Accessories
+		- Beds
+		- Bowls & Feeders
+		- Collars, Leashes and Harnesses
+		- Gates, Crates & Kernels
+		- Grooming
+		- Toys
+>>>>>>> 6b7a0ab255e77915c4e93368417a42e749a8ddce
     
 ---
 
