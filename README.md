@@ -79,7 +79,7 @@ Protótipo em HTML + CSS
     -   No sistema, os **administradores** são responsáveis por gerir outros administradores e produtos exibidos no site. O **administrador** possui **nome**, **identificador**, **telefone** e **e-mail**.
     -   No sistema, os usuários **comuns** utilizam o sistema para comprar produtos de Pet Shop. Os usuários **comuns** possuem **nome**, **identificador**, **telefone**, **endereço** e **e-mail**.
 
--   O sistema possui uma série de **produtos** que são exibidos para a compra _on-line_. Os registros dos **produtos** são compostos por **nome**, **identificador**, **foto**, **descrição**, **preço**, **pets recomendados** (especifica para qual tipo de _pet_ esse produto é recomendado), **quantidade em estoque** e **quantidade vendida**.
+-   O sistema possui uma série de **produtos** que são exibidos para a compra _on-line_. Os registros dos **produtos** são compostos por **nome**, **identificador**, **foto**, **descrição**, **preço**, **pets recomendados** (especifica para qual tipo de _pet_ esse produto é recomendado), **quantidade em estoque**, **quantidade vendida**, **espécie do animal**, **idade do animal** e **tipo do produto**.
 
 ### Administrador
 
@@ -107,60 +107,75 @@ Protótipo em HTML + CSS
 
 ### Dados
 
--   **User**
-    -   Email
-    -   Password
-    -   Full Name
-    -   ZIP Code
-    -   Address 1 and 2
-    -   Phone
-    -   Country
-    -   State
-    -   ZIP Code
+- **Usuário**
+    - Email
+    - Senha
+    - Nome
+    - ZIP Code
+    - Endereços
+    - Telefone
+    - País
+    - Estado
+
+- **Produto**
+    - Identificador
+    - Nome
+    - Descrição
+    - Foto
+    - Preço
+    - PetsRecomendados
+    - QuantidadeEstoque
+    - QuantidadeVendida
+    - EspécieAnimal
+    - IdadeAnimal
+    - TipoProduto
 
 **OBS** Admins são inseridos pelo primeiro Admin do sistema por questões de segurança.
 
--   **Food**
+### Filtros
 
-    -   **Species**
-        -   Dog
-        -   Cat
-    -   **Age**
-        -   Newborn
-        -   Adult
-    -   **Food type**
-        -   Dry
-        -   Wet
-        -   Frozen
+- **Alimentos (Food)**
+    - **EspécieAnimal**
+        - Cachorro (Dog)
+        - Gato (Cat)
+    - **IdadeAnimal**
+        - Recém-nascido (Newborn)
+        - Adulto (Adult)
+        - Idoso (Senior)
+    - **TipoProduto**
+        - Seca (Dry)
+        - Úmida (Wet)
+        - Congelada (Frozen)
 
--   **Treats**
+- **Petiscos (Treats)**
+    - **EspécieAnimal**
+        - Cachorro (Dog)
+        - Gato (Cat)
+    -   **IdadeAnimal**
+        - Recém-nascido (Newborn)
+        - Adulto (Adult)
+        - Idoso (Senior)
+    -   **TipoProduto**
+        - Macio (Soft)
+        - Mastigável (Chewy)
+        - Dental
 
-    -   **Species**
-        -   Dog
-        -   Cat
-    -   **Age**
-        -   Newborn
-        -   Adult
-    -   **Type**
-        -   Soft
-        -   Chewy
-        -   Dental
-
--   **Supplies**
-    -   **Species**
-        -   Dog
-        -   Cat
-    -   **Age**
-        -   Newborn
-        -   Adult
-    -   **Type**
-        -   Clothes & Accessories
-        -   Beds
-        -   Bowls & Feeders
-        -   Collars, Leashes and Harnesses
-        -   Gates, Crates & Kernels
-        -   Grooming
-        -   Toys
+- **Suprimentos (Supplies)**
+    - **EspécieAnimal**
+        - Cachorro (Dog)
+        - Gato (Cat)
+    - **IdadeAnimal**
+        - Recém-nascido (Newborn)
+        - Adulto (Adult)
+        - Idoso (Senior)
+    - **TipoProduto**
+        - Roupas & Acessórios (Clothes & Accessories)
+        - Camas (Beds)
+        - Comedouros (Bowls & Feeders)
+        - Coleiras (Collars, Leashes and Harnesses)
+        - Gaiolas e caixas (Gates, Crates & Kernels)
+        - Tosa (Grooming)
+        - Brinquedos (Toys)
 
 ---
 
