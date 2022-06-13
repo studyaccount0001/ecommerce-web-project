@@ -6,6 +6,6 @@
 
 <style lang="scss" scoped>
 .main {
-    @apply bg-fluffBlue-4;
+    @apply bg-red-500;
 }
 </style>

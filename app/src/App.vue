@@ -1,11 +1,12 @@
 <template>
     <div class="main">
-        <Navbar />
+        <router-view />
     </div>
 </template>
 
 <script>
 import Navbar from "./components/atoms/Navbar/Navbar.vue";
+
 export default {
     name: "App",
     components: {

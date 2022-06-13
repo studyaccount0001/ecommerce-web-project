@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    @apply w-3;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-500;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+}
+
+.ant-btn-primary {
+    @apply bg-fluffBlue-3 text-fluffBlue-12 border-fluffBlue-4 !important;
+}
+
+.ant-btn-primary:hover {
+    @apply bg-fluffBlue-4  !important;
+}
+
+.ant-btn-primary:active {
+    @apply bg-fluffBlue-5  !important;
+}
+
+.ant-btn-secondary {
+    @apply border-fluffBlue-12 text-fluffBlue-12 !important;
+}
+
+.ant-btn-secondary:hover {
+    @apply text-fluffBlue-5 border-fluffBlue-5 !important;
+}
+
+.atn-btn-secondary:active {
+    @apply text-fluffBlue-12 border-fluffBlue-12 !important;
+}

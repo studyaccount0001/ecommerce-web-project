@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import FoodView from "../views/FoodView.vue";
-import TreatsView from "../views/TreatsView.vue";
-import SuppliesView from "../views/SuppliesView.vue";
+import ProductCategory from "../views/ProductCategory.vue";
 
 const routes = [
     {
@@ -13,22 +11,23 @@ const routes = [
     {
         path: "/supplies",
         name: "supplies",
-        component: SuppliesView,
+        component: <ProductCategory category="Supplies" />,
     },
     {
         path: "/foods",
         name: "foods",
-        component: FoodView,
+        component: <ProductCategory category="Foods" />,
     },
     {
         path: "/treats",
         name: "treats",
-        component: TreatsView,
+        component: <ProductCategory category="Treats" />,
     },
 ];
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
+    linkExactActiveClass: "active",
     routes,
 });
 

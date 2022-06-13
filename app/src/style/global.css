@@ -43,16 +43,3 @@ button {
     text-decoration: none;
     font-family: "Rubik", sans-serif;
 }
-
-a,
-a:visited,
-a:hover,
-a:active {
-    color: inherit;
-}
-
-input {
-    border: none;
-    outline: none;
-    background: none;
-}
