@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ProductCategory from "../views/ProductCategory.vue";
-import LoginView from "../views/LoginView.vue";
 import NotFound from "../views/NotFound.vue";
+
+import categories from "@/data/category";
 
 const routes = [
     {
@@ -11,24 +12,28 @@ const routes = [
         component: HomeView,
     },
     {
-        path: "/login",
-        name: "login",
-        component: LoginView,
-    },
-    {
         path: "/supplies/:product?/:id?",
         name: "supplies",
-        component: <ProductCategory category="Supplies" />,
+        component: <ProductCategory />,
+        props: {
+            category: categories.supplies,
+        },
     },
     {
         path: "/foods",
         name: "foods",
-        component: <ProductCategory category="Foods" />,
+        component: <ProductCategory />,
+        props: {
+            category: categories.foods,
+        },
     },
     {
         path: "/treats",
         name: "treats",
-        component: <ProductCategory category="Treats" />,
+        component: <ProductCategory />,
+        props: {
+            category: categories.treats,
+        },
     },
     {
         path: "/404",

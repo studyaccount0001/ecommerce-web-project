@@ -42,6 +42,10 @@
     @apply text-fluffBlue-12 border-fluffBlue-12 !important;
 }
 
+.ant-tag-checkable-checked {
+    @apply bg-fluffBlue-5 !important;
+}
+
 .link {
     @apply text-fluffBlue-12 hover:text-fluffBlue-11 hover:font-bold;
 }
