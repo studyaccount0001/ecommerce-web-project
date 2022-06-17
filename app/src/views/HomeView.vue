@@ -1,7 +1,9 @@
 <template>
     <div class="main">
         <Navbar />
-        <div class="content">This is Home page</div>
+        <div class="content">
+            <HeroSection />
+        </div>
         <FluffFooter />
     </div>
 </template>
@@ -10,6 +12,7 @@
 import { Button } from "ant-design-vue";
 import Navbar from "@/components/atoms/Navbar/Navbar.vue";
 import FluffFooter from "@/components/atoms/Footer/Footer.vue";
+import HeroSection from "@/components/atoms/HeroSection/HeroSection.vue";
 
 export default {
     name: "HomeView",
@@ -17,6 +20,7 @@ export default {
         Button,
         Navbar,
         FluffFooter,
+        HeroSection,
     },
 };
 </script>
@@ -28,6 +32,6 @@ export default {
 
 /* Padding top of 20 is mandatory to sticky navbar to work. */
 .content {
-    @apply h-full pt-20;
+    @apply h-full pt-16;
 }
 </style>

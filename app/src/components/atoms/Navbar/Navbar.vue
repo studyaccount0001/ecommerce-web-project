@@ -58,9 +58,7 @@
                 </nav>
             </div>
         </header> -->
-        <div
-            class="fixed z-50 flex items-center w-full h-20 shadow bg-fluffBlue-12"
-        >
+        <div class="fixed z-50 flex items-center w-full shadow bg-fluffBlue-12">
             <div
                 class="container justify-between px-16 py-2 mx-auto md:flex md:items-center"
             >
@@ -92,53 +90,98 @@
                     class="items-center md:flex"
                 >
                     <div
-                        class="flex flex-col md:flex-row md:mx-6"
+                        class="flex flex-col my-4 md:flex-row md:mx-6"
                         id="nav-links"
                     >
                         <router-link
                             class="link"
                             to="/foods"
-                            @click="scrollToTop()"
+                            @click="scrollToTop(), (isMenuOpen = false)"
                         >
                             <p>Food</p>
                         </router-link>
                         <router-link
                             class="link"
                             to="/treats"
-                            @click="scrollToTop()"
+                            @click="scrollToTop(), (isMenuOpen = false)"
                         >
                             <p>Treats</p>
                         </router-link>
                         <router-link
                             class="link"
                             to="/supplies"
-                            @click="scrollToTop()"
+                            @click="scrollToTop(), (isMenuOpen = false)"
                         >
                             <p>Supplies</p>
                         </router-link>
                     </div>
 
-                    <div class="flex justify-center md:block">
+                    <div
+                        class="flex flex-col items-center justify-center gap-4 md:flex-row"
+                    >
+                        <div class="flex">
+                            <Badge
+                                class="my-1 text-sm font-medium transition-colors duration-200 transform cursor-pointer md:mx-4 md:my-0"
+                                :count="store.state.cartCount"
+                                show-zero
+                            >
+                                <ShoppingCartOutlined
+                                    class="text-2xl cart"
+                                    @click="showDrawer"
+                                />
+                            </Badge>
+                        </div>
+
                         <div
-                            class="my-1 text-sm font-medium text-white transition-colors duration-200 transform cursor-pointer hover:text-blue-500 md:mx-4 md:my-0"
+                            class="flex justify-center md:block"
+                            v-if="store.state.isLoggedIn"
                         >
-                            <ShoppingCartOutlined class="text-xl" />
+                            <div
+                                class="flex my-1 text-sm font-medium text-white transition-colors duration-200 transform cursor-pointer md:mx-4 md:my-0"
+                            >
+                                <UserOutlined class="text-xl" />
+                            </div>
+                        </div>
+                        <div class="flex justify-center md:block" v-else>
+                            <div
+                                class="flex items-center justify-center gap-6 my-1 text-sm font-medium text-white transition-colors duration-200 transform md:mx-4 md:my-0"
+                            >
+                                <router-link
+                                    class="link"
+                                    to="/login"
+                                    @click="scrollToTop()"
+                                >
+                                    <Button type="primary"> Login </Button>
+                                </router-link>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
+    <Drawer
+        v-model:visible="visibleDrawer"
+        title="Cart"
+        placement="right"
+        width="400"
+    >
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+    </Drawer>
 </template>
 
 <script>
-import { Button } from "ant-design-vue";
+import { ref } from "vue";
+import { Button, Badge, Drawer } from "ant-design-vue";
 import store from "@/store";
 
 import {
     ShoppingCartOutlined,
     MenuOutlined,
     CloseOutlined,
+    UserOutlined,
 } from "@ant-design/icons-vue";
 
 import Logo from "@/components/atoms/Logo/Logo.vue";
@@ -148,9 +191,19 @@ export default {
     components: {
         Button,
         Logo,
+        Badge,
+        Drawer,
         ShoppingCartOutlined,
         MenuOutlined,
         CloseOutlined,
+        UserOutlined,
+    },
+    setup() {
+        const visibleDrawer = ref(false);
+
+        return {
+            visibleDrawer,
+        };
     },
     data() {
         return {
@@ -159,17 +212,30 @@ export default {
         };
     },
     methods: {
+        showDrawer() {
+            this.visibleDrawer = true;
+        },
         toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
         },
         scrollToTop() {
-            window.scrollTo(0, 0);
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
         },
     },
 };
 </script>
 
 <style lang="scss" scoped>
+.cart {
+    color: white !important;
+
+    &:hover {
+        color: rgb(24, 144, 255) !important;
+    }
+}
 .link {
     @apply text-white;
 }
