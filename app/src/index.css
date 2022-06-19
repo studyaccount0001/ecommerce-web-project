@@ -23,7 +23,7 @@
 }
 
 .ant-btn {
-    @apply rounded !important;
+    @apply rounded inline-flex items-center justify-center !important;
 }
 
 .ant-btn-primary {

@@ -39,21 +39,21 @@
                     >
                         <router-link
                             class="link"
-                            to="/foods"
+                            to="/products/foods"
                             @click="scrollToTop(), (isMenuOpen = false)"
                         >
                             <p>Foods</p>
                         </router-link>
                         <router-link
                             class="link"
-                            to="/treats"
+                            to="/products/treats"
                             @click="scrollToTop(), (isMenuOpen = false)"
                         >
                             <p>Treats</p>
                         </router-link>
                         <router-link
                             class="link"
-                            to="/supplies"
+                            to="/products/supplies"
                             @click="scrollToTop(), (isMenuOpen = false)"
                         >
                             <p>Supplies</p>
@@ -100,22 +100,22 @@
             </div>
         </div>
     </header>
+
     <CartDrawer
         v-model:visible="visibleDrawer"
         title="Cart"
         placement="right"
         width="400"
     >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <Empty description="There's no products in your cart!" />
     </CartDrawer>
+
     <LoginModal v-model:visible="visibleLogin" />
 </template>
 
 <script>
 import { ref } from "vue";
-import { Button, Badge, Drawer as CartDrawer } from "ant-design-vue";
+import { Button, Badge, Drawer as CartDrawer, Empty } from "ant-design-vue";
 import LoginModal from "./LoginModal.vue";
 import store from "@/store";
 
@@ -131,15 +131,16 @@ import Logo from "@/components/atoms/Logo/Logo.vue";
 export default {
     name: "Navbar",
     components: {
-        Button,
         Logo,
         Badge,
-        CartDrawer,
-        ShoppingCartOutlined,
-        MenuOutlined,
-        CloseOutlined,
-        UserOutlined,
+        Empty,
+        Button,
         LoginModal,
+        CartDrawer,
+        MenuOutlined,
+        UserOutlined,
+        CloseOutlined,
+        ShoppingCartOutlined,
     },
     setup() {
         const visibleDrawer = ref(false);

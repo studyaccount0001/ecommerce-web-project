@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
+
 import HomeView from "../views/HomeView.vue";
 import ProductCategory from "../views/ProductCategory.vue";
 import NotFound from "../views/NotFound.vue";
-
-import categories from "@/data/category";
 
 const routes = [
     {
@@ -12,27 +11,27 @@ const routes = [
         component: HomeView,
     },
     {
-        path: "/supplies/:product?/:id?",
+        path: "/products/supplies/:id?",
         name: "supplies",
         component: <ProductCategory />,
         props: {
-            category: categories.supplies,
+            category: "Supplies",
         },
     },
     {
-        path: "/foods",
+        path: "/products/foods/:id?",
         name: "foods",
         component: <ProductCategory />,
         props: {
-            category: categories.foods,
+            category: "Foods",
         },
     },
     {
-        path: "/treats",
+        path: "/products/treats/:id?",
         name: "treats",
         component: <ProductCategory />,
         props: {
-            category: categories.treats,
+            category: "Treats",
         },
     },
     {
@@ -47,6 +46,7 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
+    mode: "history",
     linkExactActiveClass: "active",
     routes,
 });
