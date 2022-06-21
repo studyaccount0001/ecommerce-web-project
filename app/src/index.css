@@ -46,6 +46,11 @@
     @apply bg-fluffBlue-5 !important;
 }
 
+/* Fixes weird bug on filter selection */
+.ant-select-dropdown {
+    @apply z-0 !important;
+}
+
 .link {
     @apply text-fluffBlue-12 hover:text-fluffBlue-11 hover:font-bold;
 }

@@ -1,7 +1,7 @@
 <template>
-    <header>
+    <header class="sticky top-0 z-50 w-full">
         <div
-            class="fixed z-50 flex items-center w-full shadow max-h-96 bg-fluffBlue-12 md:max-h-16"
+            class="flex items-center w-full shadow max-h-96 bg-fluffBlue-12 md:max-h-16"
         >
             <div
                 class="container justify-between px-16 py-2 mx-auto md:flex md:items-center"

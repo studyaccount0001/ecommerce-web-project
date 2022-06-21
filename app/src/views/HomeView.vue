@@ -30,8 +30,7 @@ export default {
     @apply h-screen;
 }
 
-/* Padding top of 20 is mandatory to sticky navbar to work. */
 .content {
-    @apply h-full pt-16;
+    @apply h-full;
 }
 </style>
