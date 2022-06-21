@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ProductCategory from "../views/ProductCategory.vue";
 import NotFound from "../views/NotFound.vue";
+import UserView from "../views/UserView.vue";
 
 const routes = [
     {
@@ -33,6 +34,11 @@ const routes = [
         props: {
             category: "Treats",
         },
+    },
+    {
+        path: "/user",
+        name: "user",
+        component: UserView,
     },
     {
         path: "/404",

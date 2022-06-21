@@ -1,8 +1,9 @@
 import { createStore } from "vuex";
 
-const store = createStore({
+export default createStore({
     state: {
         isLoggedIn: false,
+        doesUserHaveRegisteredCard: false,
         cartCount: 0,
         cartValues: {},
         cartItems: [],
@@ -32,5 +33,3 @@ const store = createStore({
     actions: {},
     modules: {},
 });
-
-export default store;

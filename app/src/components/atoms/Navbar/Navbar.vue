@@ -1,7 +1,7 @@
 <template>
     <header>
         <div
-            class="fixed z-50 flex items-center w-full shadow max-h-96 bg-fluffBlue-12 opacity-95 md:max-h-16"
+            class="fixed z-50 flex items-center w-full shadow max-h-96 bg-fluffBlue-12 md:max-h-16"
         >
             <div
                 class="container justify-between px-16 py-2 mx-auto md:flex md:items-center"
@@ -63,10 +63,10 @@
                     <div
                         class="flex flex-col items-center justify-center gap-4 md:flex-row"
                     >
-                        <div class="flex">
+                        <div class="flex flex-row">
                             <Badge
                                 class="my-1 text-sm font-medium transition-colors duration-200 transform cursor-pointer md:mx-4 md:my-0"
-                                :count="store.state.cartCount"
+                                :count="this.$store.state.cartCount"
                                 show-zero
                             >
                                 <ShoppingCartOutlined
@@ -78,11 +78,12 @@
 
                         <div
                             class="flex justify-center md:block"
-                            v-if="store.state.isLoggedIn"
+                            v-if="this.$store.state.isLoggedIn"
                         >
                             <div
                                 class="flex my-1 text-sm font-medium text-white transition-colors duration-200 transform cursor-pointer md:mx-4 md:my-0"
                             >
+                                <!--  -->
                                 <UserOutlined class="text-xl" />
                             </div>
                         </div>
@@ -101,23 +102,15 @@
         </div>
     </header>
 
-    <CartDrawer
-        v-model:visible="visibleDrawer"
-        title="Cart"
-        placement="right"
-        width="400"
-    >
-        <Empty description="There's no products in your cart!" />
-    </CartDrawer>
-
-    <LoginModal v-model:visible="visibleLogin" />
+    <CartDrawer ref="cartDrawer" />
+    <LoginModal ref="loginModal" />
 </template>
 
 <script>
 import { ref } from "vue";
-import { Button, Badge, Drawer as CartDrawer, Empty } from "ant-design-vue";
+import { Button, Badge } from "ant-design-vue";
+import CartDrawer from "./CartDrawer.vue";
 import LoginModal from "./LoginModal.vue";
-import store from "@/store";
 
 import {
     ShoppingCartOutlined,
@@ -133,10 +126,9 @@ export default {
     components: {
         Logo,
         Badge,
-        Empty,
         Button,
-        LoginModal,
         CartDrawer,
+        LoginModal,
         MenuOutlined,
         UserOutlined,
         CloseOutlined,
@@ -152,16 +144,15 @@ export default {
     data() {
         return {
             isMenuOpen: false,
-            store,
             visibleLogin: false,
         };
     },
     methods: {
         showDrawer() {
-            this.visibleDrawer = true;
+            this.$refs.cartDrawer.showDrawer();
         },
         showLogin() {
-            this.visibleLogin = true;
+            this.$refs.loginModal.showLogin();
         },
         toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
