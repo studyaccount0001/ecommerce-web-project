@@ -10,6 +10,7 @@ export default createStore({
         selectedProduct: {},
         totalPrice: 0,
         productIds: [],
+        activeFilters: [],
     },
     getters: {},
     mutations: {

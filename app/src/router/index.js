@@ -1,20 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-
-import HomeView from "../views/HomeView.vue";
-import ProductCategory from "../views/ProductCategory.vue";
-import NotFound from "../views/NotFound.vue";
-import UserView from "../views/UserView.vue";
+import { Error } from "./errors";
 
 const routes = [
     {
         path: "/",
         name: "home",
-        component: HomeView,
+        component: () => import("../views/HomeView.vue"),
     },
     {
         path: "/products/supplies/:id?",
         name: "supplies",
-        component: <ProductCategory />,
+        component: () => import("../views/ProductCategory.vue"),
         props: {
             category: "Supplies",
         },
@@ -22,7 +18,7 @@ const routes = [
     {
         path: "/products/foods/:id?",
         name: "foods",
-        component: <ProductCategory />,
+        component: () => import("../views/ProductCategory.vue"),
         props: {
             category: "Foods",
         },
@@ -30,7 +26,7 @@ const routes = [
     {
         path: "/products/treats/:id?",
         name: "treats",
-        component: <ProductCategory />,
+        component: () => import("../views/ProductCategory.vue"),
         props: {
             category: "Treats",
         },
@@ -38,11 +34,11 @@ const routes = [
     {
         path: "/user",
         name: "user",
-        component: UserView,
+        component: () => import("../views/UserView.vue"),
     },
     {
         path: "/404",
-        component: NotFound,
+        component: () => import("../views/NotFound.vue"),
     },
     {
         path: "/:catchAll(.*)",
@@ -52,8 +48,9 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
-    mode: "history",
+    scrollBehavior: () => ({ top: 0 }),
     linkExactActiveClass: "active",
+    mode: "history",
     routes,
 });
 
