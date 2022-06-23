@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import { Error } from "./errors";
 
 const routes = [
     {
@@ -8,37 +7,27 @@ const routes = [
         component: () => import("../views/HomeView.vue"),
     },
     {
-        path: "/products/supplies/:id?",
-        name: "supplies",
-        component: () => import("../views/ProductCategory.vue"),
-        props: {
-            category: "Supplies",
-        },
+        path: "/products/:category",
+        name: "products",
+        component: () => import("../views/MultipleProductsMainView.vue"),
+        props: (route) => ({
+            category: route.params.category,
+        }),
     },
     {
-        path: "/products/foods/:id?",
-        name: "foods",
-        component: () => import("../views/ProductCategory.vue"),
-        props: {
-            category: "Foods",
-        },
+        path: "/product/:id",
+        name: "product",
+        component: () => import("../views/SingleProductDetailsView.vue"),
+        props: (route) => ({ id: route.params.id }),
     },
     {
-        path: "/products/treats/:id?",
-        name: "treats",
-        component: () => import("../views/ProductCategory.vue"),
-        props: {
-            category: "Treats",
-        },
-    },
-    {
-        path: "/user",
-        name: "user",
-        component: () => import("../views/UserView.vue"),
+        path: "/account",
+        name: "account",
+        component: () => import("../views/AccountView.vue"),
     },
     {
         path: "/404",
-        component: () => import("../views/NotFound.vue"),
+        component: () => import("../views/NotFoundView.vue"),
     },
     {
         path: "/:catchAll(.*)",
