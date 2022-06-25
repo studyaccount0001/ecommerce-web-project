@@ -98,7 +98,7 @@ export default createStore({
                 return true;
             }
 
-            return false;
+            throw new Error("Invalid credentials");
         },
     },
     modules: {},

@@ -26,6 +26,10 @@
     @apply rounded inline-flex items-center justify-center !important;
 }
 
+.ant-btn:disabled {
+    @apply bg-gray-500 text-fluffBlue-1 border-gray-500 hover:bg-gray-500 active:bg-gray-500 !important;
+}
+
 .ant-btn-primary {
     @apply bg-fluffBlue-5 text-fluffBlue-1 border-fluffBlue-4 hover:bg-fluffBlue-4 active:bg-fluffBlue-4 !important;
 }

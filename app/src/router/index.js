@@ -1,10 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 
+import { Role } from "@/roles";
+
 const routes = [
     {
         path: "/",
         name: "home",
         component: () => import("../views/HomeView.vue"),
+        meta: { authorize: Role.Any },
     },
     {
         path: "/products/:category",
@@ -13,17 +16,20 @@ const routes = [
         props: (route) => ({
             category: route.params.category,
         }),
+        meta: { authorize: Role.Any },
     },
     {
         path: "/product/:id",
         name: "product",
         component: () => import("../views/SingleProductDetailsView.vue"),
         props: (route) => ({ id: route.params.id }),
+        meta: { authorize: Role.Any },
     },
     {
         path: "/account",
         name: "account",
         component: () => import("../views/AccountView.vue"),
+        meta: { authorize: Role.Customer },
     },
     {
         path: "/404",
