@@ -3,37 +3,7 @@
 ![Logo](https://github.com/opaulosoares/ecommerce-web-project/blob/main/branding/banner-github.png)
 
 Projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219).
-
-## Milestones
-
--   <a href="https://github.com/opaulosoares/ecommerce-web-project/tree/main/milestone-1" target="_blank">
-    Milestone 1
-    </a>
--   Milestone 2 - TO-DO
--   Milestone 3 - TO-DO
-
-## Tópicos
-
-- [fluffshop - E-commerce Web Project](#fluffshop---e-commerce-web-project)
-	- [Milestones](#milestones)
-	- [Tópicos](#tópicos)
-	- [Detalhes](#detalhes)
-		- [Detalhes da empresa fictícia](#detalhes-da-empresa-fictícia)
-	- [Protótipos](#protótipos)
-		- [Figma](#figma)
-		- [Navegação Figma](#navegação-figma)
-		- [HTML/CSS](#htmlcss)
-	- [Documento de Requisitos](#documento-de-requisitos)
-		- [Administrador](#administrador)
-		- [Usuário comum](#usuário-comum)
-			- [Funcionalidade extra](#funcionalidade-extra)
-		- [Requisitos não-funcionais](#requisitos-não-funcionais)
-		- [Dados](#dados)
-	- [Descrição do projeto](#descrição-do-projeto)
-	- [Diagramas de navegação](#diagramas-de-navegação)
-	- [Tabela de Cores](#tabela-de-cores)
-
-## Detalhes
+Feito por:
 
 | Identificador | Nome                           |
 | ------------- | ------------------------------ |
@@ -41,26 +11,59 @@ Projeto final para a disciplina de Introdução ao Desenvolvimento Web (SCC0219)
 | 11795680      | Natan Henrique Sanches         |
 | 10873365      | Álvaro José Lopes              |
 
-### Detalhes da empresa fictícia
+## 0. Introdução
+
+### 0.1. Sumário do Documento
+
+- [fluffshop - E-commerce Web Project](#fluffshop---e-commerce-web-project)
+	- [0. Introdução](#0-introdução)
+		- [0.1. Sumário do Documento](#01-sumário-do-documento)
+		- [0.2. Seções de cada Milestone](#02-seções-de-cada-milestone) 
+		- [0.3. Detalhes da empresa fictícia](#03-detalhes-da-empresa-fictícia)
+		- [0.4. Protótipos](#04-protótipos)
+	- [1. Documento de Requisitos](#1-documento-de-requisitos)
+		- [1.1. Requisitos da aplicação](#11-requisitos-da-aplicação)
+		- [1.2. Requisitos da base de dados](#12-requisitos-da-base-de-dados)
+	- [2. Descrição do Projeto](#2-descrição-do-projeto)
+		- [2.1. Descrição Geral](#21-descrição-geral)
+		- [2.2. Diagramas de Navegação](#22-diagramas-de-navegação)
+		- [2.3. Tabela de Cores](#23-tabela-de-cores)
+	- [3. Comentários sobre o Código](#3-comentários-sobre-o-código)
+	- [4. Planos de Teste](#4-planos-de-teste)
+		- [4.1. Testes Propostos](#41-testes-propostos)
+		- [4.2. Resultados dos Testes](#42-resultados-dos-testes) 
+	- [5. Procedimento de Execução](#5-procedimento-de-execução)
+	- [6. Problemas](#6-problemas)
+	- [7. Comentários](#7-comentários)
+		
+### 0.2. Seções de cada _Milestone_
+
+-   <a href="https://github.com/opaulosoares/ecommerce-web-project/tree/main/milestone-1" target="_blank">
+    Milestone 1
+    </a>
+-   Milestone 2 - TO-DO
+-   Milestone 3 - TO-DO
+
+### 0.3. Detalhes da empresa fictícia
 
 -   **Nome:** Fluffshop
 -   **Área de atuação:** _Pet-shop_ para cães e gatos.
 
-## Protótipos
+### 0.4. Protótipos
 
-### Figma
+#### Figma
 
 <a href="https://www.figma.com/file/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=53%3A162" target="_blank">
 Link para o projeto no Figma
 </a>
 
-### Navegação Figma
+#### Navegação Figma
 
 <a href="https://www.figma.com/proto/LzWsi7yFEvNQ4pdKTXLKaw/fluffshop?node-id=56%3A823&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=56%3A823" target="_blank">
 Link para o protótipo com navegação completa no Figma
 </a>
 
-### HTML/CSS
+#### HTML/CSS
 
 <a href="https://opaulosoares.github.io/ecommerce-web-project/" target="_blank">
 Protótipo em HTML + CSS
@@ -72,7 +75,9 @@ Protótipo em HTML + CSS
     -   "Sign In"
     -   "Foods"
 
-## Documento de Requisitos
+## 1. Documento de Requisitos
+
+### 1.1. Requisitos da aplicação
 
 -   O sistema deve possuir dois tipos de usuários: **comum e administrador**.
 
@@ -81,14 +86,14 @@ Protótipo em HTML + CSS
 
 -   O sistema possui uma série de **produtos** que são exibidos para a compra _on-line_. Os registros dos **produtos** são compostos por **nome**, **identificador**, **foto**, **descrição**, **preço**, **pets recomendados** (especifica para qual tipo de _pet_ esse produto é recomendado), **quantidade em estoque**, **quantidade vendida**, **espécie do animal**, **idade do animal** e **tipo do produto**.
 
-### Administrador
+#### Administrador
 
 -   No sistema, o administrador pode **inserir** novos produtos para serem exibidos na loja.
 -   No sistema, o administrador tem acesso às **listas** contendo os produtos ativos e inativos na loja.
 -   No sistema, o administrador pode **remover** um produto existente na loja.
 -   No sistema, o administrador pode dar o cargo de **Administrador** a um usuário **comum**.
 
-### Usuário comum
+#### Usuário comum
 
 -   No sistema, o usuário pode se **registrar** utilizando seu **e-mail**, **senha**, **nome**, **endereço** e **telefone**. Ao ser registrado, o usuário possui um perfil próprio no site ligado com seu **e-mail** e **senha**.
 -   No sistema, um usuário comum pode **cadastrar** um número de cartão de crédito para pagamento.
@@ -100,12 +105,12 @@ Protótipo em HTML + CSS
 
 -   O sistema permite que o usuário consulte para qual tipo de _pet_ aquele produto é recomendado. O tipo de _pet_ pode ser "Qualquer pet", "Cachorro pequeno", "Cachorro médio", "Cachorro grande", "Gato pequeno", "Gato médio", "Gato grande". Um produto pode ter mais de um tipo de _pet_ recomendado simultaneamente.
 
-### Requisitos não-funcionais
+#### Requisitos não-funcionais
 
 -   O sistema deve ser responsivo e possuir boa usabilidade.
 -   O sistema deve conter funcionalidades de acessibilidade para usuários.
 
-### Dados
+### 1.2. Requisitos da base de dados
 
 - **Usuário**
     - Email
@@ -179,7 +184,9 @@ Protótipo em HTML + CSS
 
 ---
 
-## Descrição do projeto
+## 2. Descrição do projeto
+
+### 2.1. Descrição Geral
 
 O _e-commerce_ desenvolvido para a disciplina foi o de uma _pet-shop_, _Fluffshop_, caracterizada em produtos para cães e gatos (alimentos, suprimentos e petiscos).
 
@@ -196,9 +203,9 @@ O _e-commerce_ desenvolvido para a disciplina foi o de uma _pet-shop_, _Fluffsho
 
     -   **Acessibilidade:** O site conta com um mecanismo de mudança de cores no estilo claro/escuro, respeitando os padrões visuais WCAG, de forma que torne-se acessível a usuários com problemas de visão.
 
-## Diagramas de navegação
+### 2.2. Diagramas de navegação
 
-Diagrama de navegação do admin.
+Diagrama de navegação do administrador.
 
 ![](./milestone-1/navigation-diagram/admin-nav-diagram.png)
 
@@ -210,10 +217,26 @@ Além desta, também foi produzido um diagrama sendo uma versão mais detalhada 
 
 ![](./milestone-1/navigation-diagram/full-nav-diagram.png)
 
-## Tabela de Cores
+### 2.3. Tabela de Cores
 
 Tabela de cores com seus respectivos testes de acessibilidade no padrao WCAG 2.0.
 
 <img src="./milestone-1/img/colors.png" alt="colors" style="width:500px"/>
 
 Nem todas cores devem passar nos testes, pois nem todas são usadas como texto ou fundo do texto. Contudo, as cores "dark" e "white" estão compatíveis entre si no padrão WCAG 2.0, o que é extrememamente relevante para a acessibilidade do site, visto que serão as cores mais usadas para o texto e fundo do texto. O nome e variações das cores restantes podem ser modificadas durante o progresso do projeto, porém as cores "dark" e "white" serão mantidas, além das cores oficiais da marca. Essa prática de refatoração é bastante comum em projetos como esse, pois o produto encontra-se em constante evolução.
+
+## 3. Comentários sobre o Código
+
+## 4. Planos de Teste
+### 4.1. Testes Propostos
+### 4.2. Resultados dos Testes
+
+## 5. Procedimento de Execução
+
+## 6. Problemas
+
+Não foram encontrados problemas críticos no desenvolvimento do projeto.
+
+## 7. Comentários
+
+O grupo não viu necessidade de acrescentar comentários extras.
