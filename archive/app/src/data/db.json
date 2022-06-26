@@ -1,0 +1,278 @@
+{
+    "foods": [
+        {
+            "id": 1,
+            "name": "Dog food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "dry",
+            "price": "5.00"
+        },
+        {
+            "id": 2,
+            "name": "Cat food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "dry",
+            "price": "15.00"
+        },
+        {
+            "id": 3,
+            "name": "Dog food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "wet",
+            "price": "25.00"
+        },
+        {
+            "id": 4,
+            "name": "Cat food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "wet",
+            "price": "40.00"
+        },
+        {
+            "id": 5,
+            "name": "Dog food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "frozen",
+            "price": "2.00"
+        },
+        {
+            "id": 6,
+            "name": "Cat food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "frozen",
+            "price": "90.00"
+        },
+        {
+            "id": 7,
+            "name": "Dog food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "dry",
+            "price": "5.00"
+        },
+        {
+            "id": 8,
+            "name": "Cat food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "dry",
+            "price": "10.00"
+        },
+        {
+            "id": 9,
+            "name": "Dog food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "wet",
+            "price": "20.00"
+        },
+        {
+            "id": 10,
+            "name": "Cat food",
+            "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "wet",
+            "price": "5.00"
+        }
+    ],
+    "treats": [
+        {
+            "id": 1,
+            "name": "Dog treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "soft",
+            "price": "5.00"
+        },
+        {
+            "id": 2,
+            "name": "Cat treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "soft",
+            "price": "10.00"
+        },
+        {
+            "id": 3,
+            "name": "Dog treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "chewy",
+            "price": "15.00"
+        },
+        {
+            "id": 4,
+            "name": "Cat treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "chewy",
+            "price": "20.00"
+        },
+        {
+            "id": 5,
+            "name": "Dog treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "dental",
+            "price": "25.00"
+        },
+        {
+            "id": 6,
+            "name": "Cat treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "dental",
+            "price": "30.00"
+        },
+        {
+            "id": 7,
+            "name": "Dog treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "soft",
+            "price": "5.00"
+        },
+        {
+            "id": 8,
+            "name": "Cat treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "soft",
+            "price": "10.00"
+        },
+        {
+            "id": 9,
+            "name": "Dog treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "chewy",
+            "price": "15.00"
+        },
+        {
+            "id": 10,
+            "name": "Cat treat",
+            "image": "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "chewy",
+            "price": "20.00"
+        }
+    ],
+    "supplies": [
+        {
+            "id": 1,
+            "name": "Dog clothes",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "clothes",
+            "price": "5.00"
+        },
+        {
+            "id": 2,
+            "name": "Cat clothes",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "clothes",
+            "price": "10.00"
+        },
+        {
+            "id": 3,
+            "name": "Dog beds",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "beds",
+            "price": "15.00"
+        },
+        {
+            "id": 4,
+            "name": "Cat beds",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "beds",
+            "price": "20.00"
+        },
+        {
+            "id": 5,
+            "name": "Dog feeder",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "feeder",
+            "price": "25.00"
+        },
+        {
+            "id": 6,
+            "name": "Cat feeder",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "feeder",
+            "price": "30.00"
+        },
+        {
+            "id": 7,
+            "name": "Dog collar",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "collar",
+            "price": "35.00"
+        },
+        {
+            "id": 8,
+            "name": "Cat collar",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "collar",
+            "price": "40.00"
+        },
+        {
+            "id": 9,
+            "name": "Dog gate",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "dog",
+            "petAge": "adult",
+            "productType": "gate",
+            "price": "45.00"
+        },
+        {
+            "id": 10,
+            "name": "Cat gate",
+            "image": "https://images.unsplash.com/photo-1556229040-2a7bc8a00a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "petSpecie": "cat",
+            "petAge": "adult",
+            "productType": "gate",
+            "price": "50.00"
+        }
+    ]
+}
