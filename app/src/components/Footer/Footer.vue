@@ -8,7 +8,7 @@
                     <div
                         class="flex flex-col items-start justify-start text-left"
                     >
-                        <h4>SUPPORT</h4>
+                        <h4 class="text-fluffBlue-12">SUPPORT</h4>
                         <p>support@fluffshop.usp.br</p>
                         <p>
                             Av. Trab. São Carlense, 400 - Centro, São Carlos -
@@ -52,12 +52,22 @@
                             <p class="font-medium">Institutional</p>
 
                             <nav
-                                class="flex flex-col mt-4 space-y-2 text-sm text-gray-500"
+                                class="flex flex-col mt-4 text-sm text-gray-500"
                             >
-                                <a class="hover:opacity-75" href=""> About </a>
-                                <a class="hover:opacity-75" href="">
-                                    Contact
-                                </a>
+                                <router-link
+                                    class="link"
+                                    to="/products/foods"
+                                    @click="isMenuOpen = false"
+                                >
+                                    <p>About</p>
+                                </router-link>
+                                <router-link
+                                    class="link"
+                                    to="/products/treats"
+                                    @click="isMenuOpen = false"
+                                >
+                                    <p>Contact</p>
+                                </router-link>
                             </nav>
                         </div>
                     </div>

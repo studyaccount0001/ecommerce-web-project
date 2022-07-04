@@ -3,18 +3,7 @@
         <Navbar />
         <div class="mx-auto max-w-screen-2xl" id="main-container">
             <PageHeader>
-                <div class="flex flex-col">
-                    <h1 class="text-2xl">
-                        Hello
-                        <strong>
-                            {{ $store.getters.user.name.split(" ")[0] }}
-                        </strong>
-                        , welcome back!
-                    </h1>
-                    In this page you can see all your information and edit if
-                    needed!
-                </div>
-
+                <h1 class="text-2xl">Register your new account</h1>
                 <div class="w-full h-full">
                     <div class="mt-4">
                         <Form>
@@ -33,7 +22,7 @@
                                     <Input
                                         v-model:value="formState.name"
                                         type="text"
-                                        :placeholder="$store.getters.user.name"
+                                        placeholder="Insert your name"
                                     />
                                 </FormItem>
 
@@ -42,7 +31,7 @@
                                     <Input
                                         v-model:value="formState.phone"
                                         type="phone"
-                                        :placeholder="$store.getters.user.phone"
+                                        placeholder="Insert your phone number"
                                     />
                                 </FormItem>
                             </div>
@@ -53,7 +42,7 @@
                                     <Input
                                         v-model:value="formState.email"
                                         type="email"
-                                        :placeholder="$store.getters.user.email"
+                                        placeholder="Insert your email"
                                     />
                                 </FormItem>
                                 <FormItem name="password" class="w-full">
@@ -70,21 +59,30 @@
                             </div>
                             <div class="block md:flex md:gap-4">
                                 <FormItem name="address" class="w-full">
-                                    <p class="flex text-zinc-400">Address</p>
+                                    <p class="flex text-zinc-400">City</p>
                                     <Input
-                                        v-model:value="formState.address"
+                                        v-model:value="formState.city"
                                         type="phone"
-                                        :placeholder="
-                                            $store.getters.user.address
-                                        "
+                                        placeholder="Insert your city"
                                     />
                                 </FormItem>
                                 <FormItem name="zip" class="w-full">
                                     <p class="flex text-zinc-400">ZIP Code</p>
                                     <Input
                                         v-model:value="formState.zip"
+                                        type="zip"
+                                        placeholder="Insert your zip code"
+                                    />
+                                </FormItem>
+                            </div>
+
+                            <div class="block md:flex md:gap-4">
+                                <FormItem name="address" class="w-full">
+                                    <p class="flex text-zinc-400">Address</p>
+                                    <Input
+                                        v-model:value="formState.address"
                                         type="phone"
-                                        :placeholder="$store.getters.user.zip"
+                                        placeholder="Insert your address"
                                     />
                                 </FormItem>
                             </div>
@@ -99,47 +97,25 @@
                             </div>
                             <div class="block md:flex md:gap-4">
                                 <FormItem name="card" class="w-full">
-                                    <p class="flex text-zinc-400">Number</p>
+                                    <p class="flex text-zinc-400">
+                                        Credit Card
+                                    </p>
                                     <Input
-                                        v-model:value="formState.card.number"
+                                        v-model:value="formState.card"
                                         type="phone"
-                                        :placeholder="
-                                            $store.getters.user.card.number
-                                        "
+                                        placeholder="Insert your credit card"
                                     />
                                 </FormItem>
-                                <FormItem name="exp" class="w-full">
-                                    <p class="flex text-zinc-400">Expiration</p>
-                                    <Input
-                                        v-model:value="formState.card.exp"
-                                        type="month"
-                                        :placeholder="
-                                            $store.getters.user.card.exp
-                                        "
-                                    />
-                                </FormItem>
-                                <FormItem name="cvv" class="w-full">
-                                    <p class="flex text-zinc-400">CVV</p>
-                                    <Input
-                                        v-model:value="formState.card.cvv"
-                                        type="number"
-                                        :placeholder="
-                                            $store.getters.user.card.cvv
-                                        "
-                                    />
+                            </div>
+                            <div class="flex gap-4">
+                                <FormItem>
+                                    <Button type="primary" @click="test">
+                                        Register
+                                    </Button>
                                 </FormItem>
                             </div>
                         </Form>
                     </div>
-                </div>
-
-                <div class="flex gap-4">
-                    <Button
-                        type="primary"
-                        @click="$store.commit('editUser', formState)"
-                    >
-                        Edit your account
-                    </Button>
                 </div>
             </PageHeader>
         </div>
@@ -160,6 +136,7 @@ import {
 } from "ant-design-vue";
 
 import Navbar from "@/components/Navbar/Navbar.vue";
+import Logo from "@/components/Logo/Logo.vue";
 
 export default {
     components: {
@@ -170,6 +147,7 @@ export default {
         Input,
         Button,
         InputPassword,
+        Logo,
     },
     setup() {
         const formState = reactive({
@@ -177,13 +155,12 @@ export default {
             password: "",
             email: "",
             address: "",
-            phone: "",
+            city: "",
+            state: "",
             zip: "",
-            card: {
-                number: "",
-                exp: "",
-                cvv: "",
-            },
+            phone: "",
+            card: "",
+            role: "Costumer",
         });
 
         return {
@@ -191,9 +168,9 @@ export default {
         };
     },
     methods: {
-        logoutUser() {
-            this.$store.commit("logoutUser");
-            message.success("Logged out successfully.");
+        test() {
+            console.log(this.formState);
+            message.success("Success");
         },
     },
 };

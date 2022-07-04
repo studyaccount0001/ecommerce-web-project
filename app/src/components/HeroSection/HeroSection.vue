@@ -9,19 +9,20 @@
                     <span class="text-fluffBlue-5">your pockets</span>!
                 </h1>
                 <p class="px-8 mt-8 mb-12 text-lg">
-                    Join us to get the best deals on Foods, Treats and Supplies
+                    Join us to get the best deals on
+                    <router-link to="/products/foods">Foods</router-link>,
+                    <router-link to="/products/treats">Treats</router-link> and
+                    <router-link to="/products/supplies">Supplies</router-link>
                     for your pet!
                 </p>
                 <div
                     class="flex flex-col items-center justify-center gap-4 md:flex-row"
                 >
-                    <Button type="primary" size="large" block
-                        >Join our club for free today!</Button
-                    >
-
-                    <Button type="secondary" size="large" block
-                        >Already a member? Sign in now!</Button
-                    >
+                    <router-link to="/register">
+                        <Button type="primary" size="large" block
+                            >Join our club for free today!</Button
+                        >
+                    </router-link>
                 </div>
             </div>
         </section>

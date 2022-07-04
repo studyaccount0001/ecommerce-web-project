@@ -1,8 +1,8 @@
 <template>
     <div class="flex flex-row items-center justify-center gap-2">
-        <Button @click="$store.commit('addToCart', product)"> + </Button>
-        {{ $store.getters.cart[product.id].amount }}
-        <Button @click="$store.commit('removeFromCart', product)"> - </Button>
+        <Button shape="circle" @click="increaseAmount"> + </Button>
+        {{ this.amount }}
+        <Button shape="circle" @click="decreaseAmount"> - </Button>
     </div>
 </template>
 
@@ -10,11 +10,23 @@
 import { Button } from "ant-design-vue";
 export default {
     props: {
-        product: {
-            type: Object,
-        },
         defaultValue: {
             type: Number,
+        },
+    },
+    data() {
+        return {
+            amount: this.$props.defaultValue,
+        };
+    },
+    methods: {
+        increaseAmount() {
+            this.amount++;
+            this.$emit("amount-change", this.amount);
+        },
+        decreaseAmount() {
+            this.amount--;
+            this.$emit("amount-change", this.amount);
         },
     },
     components: {

@@ -1,42 +1,11 @@
 <template>
-    <Navbar />
     <div class="mx-auto max-w-screen-2xl" id="main-container">
-        <PageHeader :title="category.toUpperCase()">
-            <p>
-                The best deals from the
-                {{ category }}
-                section of FluffStore.
-            </p>
-
-            <SectionBanner :title="category" />
+        <PageHeader title="Best Deals">
+            <p>The best deals from fluffshop.</p>
 
             <div class="w-full pb-16 rounded" id="display">
                 <div>
                     <Spin :spinning="loading">
-                        <div class="py-8" id="filters">
-                            <h1>Filters</h1>
-                            <div class="flex gap-4">
-                                <Select
-                                    class="w-full shadow hover:shadow-md"
-                                    mode="tags"
-                                    v-model:value="this.selectedCategoryFilters"
-                                    :options="this.categoryFilters"
-                                    placeholder="Select one or more subcategories"
-                                />
-                                <Select
-                                    class="w-full shadow hover:shadow-md"
-                                    mode="tags"
-                                    v-model:value="this.selectedSpeciesFilters"
-                                    :options="this.speciesFilters"
-                                    placeholder="Select which type of pet you have"
-                                />
-                            </div>
-                        </div>
-
-                        <div id="deals-title">
-                            <h1>Weekly deals</h1>
-                        </div>
-
                         <div class="container mx-auto">
                             <div class="lg:flex lg:-mx-2">
                                 <div class="mt lg:mt-0 lg:px-2">
@@ -45,13 +14,13 @@
                                     >
                                         <!-- Product list rendering -->
                                         <ProductCard
-                                            v-for="product in filteredProducts"
+                                            v-for="product in sortedProducts"
                                             :key="product.id"
                                             :name="product.name"
                                             :price="product.price"
                                             :image="product.image"
                                             :productId="product.id"
-                                            :category="category"
+                                            :category="product.category"
                                             :subcategory="product.subcategory"
                                             :specie="product.petSpecie"
                                             @addedToCart="
@@ -70,7 +39,6 @@
             </div>
         </PageHeader>
     </div>
-    <FluffFooter />
 </template>
 
 <script>
@@ -81,27 +49,16 @@ import { PageHeader, Select, Spin } from "ant-design-vue";
 
 /* Local imports */
 import SectionBanner from "@/components/SectionBanner/SectionBanner.vue";
-import Navbar from "@/components/Navbar/Navbar.vue";
 import ProductCard from "@/components/ProductShowcase/ProductCard.vue";
-import FluffFooter from "@/components/Footer/Footer.vue";
 
 export default {
-    props: {
-        category: {
-            type: String,
-            required: true,
-            default: "Not specified",
-        },
-    },
     components: {
         SectionBanner,
         PageHeader,
-        Navbar,
         Select,
         ProductCard,
         Select,
         Spin,
-        FluffFooter,
     },
     created() {
         let promises = [];
@@ -123,33 +80,12 @@ export default {
         this.selectedCategoryFilters = [];
     },
     computed: {
-        filteredProducts() {
+        sortedProducts() {
             return Object.values(this.products)
-                .filter((product) => product.category === this.category)
-                .filter((product) => {
-                    if (this.selectedCategoryFilters.length === 0) return true;
-
-                    return this.selectedCategoryFilters.includes(
-                        product.subcategory
-                    );
+                .sort((a, b) => {
+                    return a.price - b.price;
                 })
-                .filter((product) => {
-                    if (this.selectedSpeciesFilters.length === 0) return true;
-
-                    return this.selectedSpeciesFilters.includes(
-                        product.petSpecie
-                    );
-                });
-        },
-        categoryFilters() {
-            return this.categoryData[this.category]?.subcategories.map(
-                (value) => ({ value })
-            );
-        },
-        speciesFilters() {
-            return this.categoryData[this.category]?.species.map((value) => ({
-                value,
-            }));
+                .slice(0, 8);
         },
         /* Para não precisar fazer this.$store.getters.[...] */
         ...mapGetters(["products", "categoryData"]),

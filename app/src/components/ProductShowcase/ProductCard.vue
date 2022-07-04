@@ -10,12 +10,13 @@
                     class="object-cover w-screen rounded h-72"
                 />
                 <div class="my-4">
+                    <Tag color="gray"> {{ category.toUpperCase() }}</Tag>
                     <Tag color="blue"> {{ subcategory.toUpperCase() }}</Tag>
                     <Tag color="pink"> {{ specie.toUpperCase() }}</Tag>
                 </div>
-                <div class="flex flex-col justify-between">
-                    <h1>{{ name.toUpperCase() }}</h1>
-                    <p>US$ {{ price }}</p>
+                <div class="flex flex-col justify-between h-24">
+                    <h1 class="name-display">{{ name.toUpperCase() }}</h1>
+                    <p>US$ {{ price }}.00</p>
                 </div>
             </div>
         </router-link>
@@ -70,9 +71,6 @@ export default {
         info() {
             message.success({
                 content: () => "Product added to cart",
-                style: {
-                    marginTop: "8vh",
-                },
             });
 
             this.$emit("addedToCart");
@@ -85,3 +83,14 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.name-display {
+    display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+</style>

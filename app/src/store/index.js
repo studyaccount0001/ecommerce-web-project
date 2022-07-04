@@ -1,4 +1,5 @@
 import { createStore } from "vuex";
+import router from "@/router";
 
 export default createStore({
     state: {
@@ -7,8 +8,10 @@ export default createStore({
         user: {},
         products: {},
         categoryData: {},
+        bestDeals: {},
     },
     getters: {
+        logged: (state) => state.isLoggedIn,
         products: (state) => state.products,
         categoryData: (state) => state.categoryData,
         cartCount: (state) =>
@@ -18,6 +21,20 @@ export default createStore({
             ),
         cart: (state) => state.cart,
         user: (state) => state.user,
+        subtotalCart: (state) => {
+            let subTotal = 0;
+            Object.values(state.cart).forEach((item) => {
+                subTotal += item.amount * item.price;
+            });
+            return subTotal;
+        },
+        shipping: (state) => {
+            let subTotal = 0;
+            Object.values(state.cart).forEach((item) => {
+                subTotal += item.amount * item.price;
+            });
+            return subTotal / 7.77;
+        },
     },
     mutations: {
         setUser: (state, user) => (state.user = user),
@@ -46,8 +63,52 @@ export default createStore({
             /* Data persistency */
             localStorage.setItem("cart", JSON.stringify(state.cart));
         },
+        clearProductAmount(state, product) {
+            delete state.cart[product.id];
+            /* Data persistency */
+            localStorage.setItem("cart", JSON.stringify(state.cart));
+        },
+        clearCart: (state) => (
+            (state.cart = {}), localStorage.removeItem("cart")
+        ),
+        registerUser: (state, user) => {
+            fetch(`http://localhost:3000/users/`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(user),
+            });
+        },
         editUser: (state, user) => {
-            state.user = user;
+            /* filter empty fields from user */
+            const filteredUser = Object.keys(user).reduce((acc, key) => {
+                if (user[key]) {
+                    acc[key] = user[key];
+                }
+                return acc;
+            }, {});
+
+            /* Merge two objects */
+            state.user = { ...state.user, ...filteredUser };
+
+            fetch(`http://localhost:3000/users/${state.user.id}`, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(state.user),
+            });
+
+            /* Data persistency */
+            localStorage.setItem("user", JSON.stringify(state.user));
+        },
+        logoutUser: (state) => {
+            state.isLoggedIn = false;
+            state.user = {};
+            state.cart = {};
+            localStorage.removeItem("user");
+            router.replace({ name: "home" });
         },
     },
     actions: {
@@ -99,6 +160,30 @@ export default createStore({
             }
 
             throw new Error("Invalid credentials");
+        },
+        async finishOrder({ state, getters, commit }) {
+            let order = await fetch(`http://localhost:3000/orders`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    user_id: state.user.id,
+                    products: state.cart,
+                    subtotal: getters.subtotalCart,
+                    shipping: getters.shipping,
+                    total: getters.subtotalCart + getters.shipping,
+                }),
+            });
+            let data = await order.json();
+
+            await new Promise((resolve) => setTimeout(resolve, 500));
+
+            commit("clearCart");
+
+            router.push("/");
+
+            return data;
         },
     },
     modules: {},

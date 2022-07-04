@@ -78,12 +78,10 @@
                                 </FormItem>
 
                                 <div class="flex">
-                                    <p
-                                        class="cursor-pointer hover:text-fluffBlue-5"
-                                        @click="toggleRegister"
-                                    >
-                                        Or register a new account!
-                                    </p>
+                                    <router-link to="/register" class="pb-6">
+                                        Don't have an account? Register for
+                                        free!
+                                    </router-link>
                                 </div>
                                 <FormItem>
                                     <Button

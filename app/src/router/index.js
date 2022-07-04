@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
+import store from "@/store";
 
+import { message } from "ant-design-vue";
 import { Role } from "@/roles";
 
 const routes = [
@@ -29,7 +31,40 @@ const routes = [
         path: "/account",
         name: "account",
         component: () => import("../views/AccountView.vue"),
-        meta: { authorize: Role.Customer },
+        beforeEnter: (to, from, next) => {
+            if (store.getters.logged) {
+                next();
+            } else {
+                message.error("You must be logged in to access this page");
+                next("/");
+            }
+        },
+    },
+    {
+        path: "/register",
+        name: "register",
+        component: () => import("../views/RegisterView.vue"),
+        beforeEnter: (to, from, next) => {
+            if (store.getters.logged) {
+                next("/");
+                message.warning("You are already logged in");
+            } else {
+                next();
+            }
+        },
+    },
+    {
+        path: "/checkout",
+        name: "checkout",
+        component: () => import("../views/CheckoutView.vue"),
+        beforeEnter: (to, from, next) => {
+            if (store.getters.logged) {
+                next();
+            } else {
+                message.info("You must be logged in to finish your order!");
+                next("/register");
+            }
+        },
     },
     {
         path: "/404",
