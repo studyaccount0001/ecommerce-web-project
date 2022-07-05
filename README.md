@@ -239,24 +239,38 @@ Senha: 123
 ```
 
 - Como administrador:
+```
+E-mail: admin@shop.com
+Senha: admin
+```
 
 ### 4.1. Testes Propostos
 
-#### Fazendo __log-in__
+#### Teste de __log-in__
 
 1. No canto superior direito, clique no botão azul `Login`.
 2. Preencha as informações relativas ao __log-in__, sendo uma conta de usuário comum ou administrador.
 3. Após preenchidas as informações, clique no botão em azul `Login`, abaixo dos campos preenchidos.
 4. Se as informações estiverem corretas, o usuário agora está logado e será redirecionado para a página principal.
 
-#### Fluxo do usuário cliente
+#### Teste do fluxo do usuário cliente
 
-#### Alterando informações da conta do cliente
+#### Teste da alteração de informações da conta do cliente
 
 1. As informações do cliente podem ser encontradas ao clicar no nome do usuário (nesse caso, 'Johnny') no canto superior direito, em azul. 
 2. Na página com as informações do usuário, preencha as novas informações desejadas.
 3. Após preencher todas as informações, clique no botão `Edit Your Account` no fim da página.
 4. As novas informações foram salvas.
+
+#### Teste de permissão de usuário comum
+
+1. Se logado como usuário comum (nesse caso, com a conta `john@email.com`), o usuário é barrado de acessar as rotas de administrador (como `/admin/users`) através da mensagem de erro `Please log-in as admin to see this page!`. A rota só pode ser acessada por uma conta de administrador.
+
+#### Teste de edição de produtos
+
+#### Teste de edição de usuários
+
+#### Teste de permissão do administrador
 
 ### 4.2. Resultados dos Testes
 
