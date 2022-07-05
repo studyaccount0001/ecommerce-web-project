@@ -227,12 +227,68 @@ Nem todas cores devem passar nos testes, pois nem todas são usadas como texto o
 
 ## 3. Comentários sobre o Código
 
+O grupo não viu necessidade de acrescentar comentários sobre o código. O desenvolvimento do conteúdo do site fluiu bem, sem maiores problemas.
+
 ## 4. Planos de Teste
+
+Para todos os planos de teste, foram utilizadas duas contas base.
+- Como cliente:
+```
+E-mail: john@email.com
+Senha: 123
+```
+
+- Como administrador:
+
 ### 4.1. Testes Propostos
+
+#### Fazendo __log-in__
+
+1. No canto superior direito, clique no botão azul `Login`.
+2. Preencha as informações relativas ao __log-in__, sendo uma conta de usuário comum ou administrador.
+3. Após preenchidas as informações, clique no botão em azul `Login`, abaixo dos campos preenchidos.
+4. Se as informações estiverem corretas, o usuário agora está logado e será redirecionado para a página principal.
+
+#### Fluxo do usuário cliente
+
+#### Alterando informações da conta do cliente
+
+1. As informações do cliente podem ser encontradas ao clicar no nome do usuário (nesse caso, 'Johnny') no canto superior direito, em azul. 
+2. Na página com as informações do usuário, preencha as novas informações desejadas.
+3. Após preencher todas as informações, clique no botão `Edit Your Account` no fim da página.
+4. As novas informações foram salvas.
+
 ### 4.2. Resultados dos Testes
+
+Todos os testes tiveram o resultado esperado.
 
 ## 5. Procedimento de Execução
 
+Para teste do site, é necessário clonar o repositório e ter o `Nodemon` e o `json-server` instalados. Para instalar o `Nodemon`:
+```
+npm install --global nodemon
+```
+
+Após isso, iremos instalar o `json-server` e as dependências do projeto:
+```
+git clone https://github.com/opaulosoares/ecommerce-web-project
+cd ecommerce-web-project
+npm install
+```
+
+Dentro do diretório `ecommerce-web-project`, para executar o `json-server`:
+```
+cd app/src/data
+nodemon server.js
+```
+
+Por fim, executaremos o servidor **em outro terminal** através dos comandos:
+```
+cd ecommerce-web-project/app
+npm run serve
+```
+
+O site, agora, está ativo no endereço `http://localhost:8080`.
 ## 6. Problemas
 
 Não foram encontrados problemas críticos no desenvolvimento do projeto.
