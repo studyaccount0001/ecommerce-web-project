@@ -1,11 +1,15 @@
 <template>
-    <div class="mx-auto max-w-screen-2xl" id="main-container">
+    <div class="min-h-screen mx-auto max-w-screen-2xl" id="main-container">
         <PageHeader title="Best Deals">
             <p>The best deals from fluffshop.</p>
 
-            <div class="w-full pb-16 rounded" id="display">
-                <div>
-                    <Spin :spinning="loading">
+            <Spin
+                :spinning="loading"
+                tip="Selecting the best deals for you"
+                size="large"
+            >
+                <div class="w-full pb-16 rounded" id="display">
+                    <div>
                         <div class="container mx-auto">
                             <div class="lg:flex lg:-mx-2">
                                 <div class="mt lg:mt-0 lg:px-2">
@@ -34,9 +38,9 @@
                                 </div>
                             </div>
                         </div>
-                    </Spin>
+                    </div>
                 </div>
-            </div>
+            </Spin>
         </PageHeader>
     </div>
 </template>

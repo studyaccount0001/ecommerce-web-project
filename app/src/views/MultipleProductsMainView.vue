@@ -12,7 +12,11 @@
 
             <div class="w-full pb-16 rounded" id="display">
                 <div>
-                    <Spin :spinning="loading">
+                    <Spin
+                        :spinning="loading"
+                        tip="Selecting the best deals for you"
+                        size="large"
+                    >
                         <div class="py-8" id="filters">
                             <h1>Filters</h1>
                             <div class="flex gap-4">

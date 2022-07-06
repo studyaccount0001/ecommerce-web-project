@@ -55,6 +55,14 @@
     @apply z-0 !important;
 }
 
+.ant-tabs-ink-bar {
+    @apply bg-fluffBlue-5 !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    @apply text-fluffBlue-5 !important;
+}
+
 .link {
     @apply text-fluffBlue-12 hover:text-fluffBlue-11 hover:font-bold;
 }

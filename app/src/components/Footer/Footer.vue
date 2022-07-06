@@ -56,17 +56,10 @@
                             >
                                 <router-link
                                     class="link"
-                                    to="/products/foods"
+                                    to="/about"
                                     @click="isMenuOpen = false"
                                 >
                                     <p>About</p>
-                                </router-link>
-                                <router-link
-                                    class="link"
-                                    to="/products/treats"
-                                    @click="isMenuOpen = false"
-                                >
-                                    <p>Contact</p>
                                 </router-link>
                             </nav>
                         </div>

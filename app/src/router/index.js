@@ -9,7 +9,6 @@ const routes = [
         path: "/",
         name: "home",
         component: () => import("../views/HomeView.vue"),
-        meta: { authorize: Role.Any },
     },
     {
         path: "/products/:category",
@@ -18,14 +17,12 @@ const routes = [
         props: (route) => ({
             category: route.params.category,
         }),
-        meta: { authorize: Role.Any },
     },
     {
         path: "/product/:id",
         name: "product",
         component: () => import("../views/SingleProductDetailsView.vue"),
         props: (route) => ({ id: route.params.id }),
-        meta: { authorize: Role.Any },
     },
     {
         path: "/account",
@@ -63,6 +60,26 @@ const routes = [
             } else {
                 message.info("You must be logged in to finish your order!");
                 next("/register");
+            }
+        },
+    },
+    {
+        path: "/admin",
+        name: "admin",
+        component: () => import("../views/AdminView.vue"),
+    },
+    {
+        path: "/admin/dashboard",
+        name: "adminDashboard",
+        component: () => import("../views/AdminDashboardView.vue"),
+        beforeEnter: (to, from, next) => {
+            if (store.getters.adminLoggedIn === true) {
+                next();
+            } else {
+                message.error(
+                    "You must be logged in as an admin to access this page"
+                );
+                next("/admin");
             }
         },
     },

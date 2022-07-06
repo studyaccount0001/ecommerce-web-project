@@ -13,7 +13,10 @@
                         >
                             <Logo class="w-36" />
 
-                            <Tag color="purple" v-if="$store.getters.user.role">
+                            <Tag
+                                color="purple"
+                                v-if="$store.getters.user.role === 'Costumer'"
+                            >
                                 {{ $store.getters.user.role }}
                             </Tag>
                         </div>

@@ -4,15 +4,18 @@ import router from "@/router";
 export default createStore({
     state: {
         isLoggedIn: false,
+        isAdminLoggedIn: false,
         cart: {},
         user: {},
+        admin: {},
         products: {},
+        users: {},
         categoryData: {},
         bestDeals: {},
     },
     getters: {
         logged: (state) => state.isLoggedIn,
-        products: (state) => state.products,
+        adminLoggedIn: (state) => state.isAdminLoggedIn,
         categoryData: (state) => state.categoryData,
         cartCount: (state) =>
             Object.values(state.cart).reduce(
@@ -21,6 +24,8 @@ export default createStore({
             ),
         cart: (state) => state.cart,
         user: (state) => state.user,
+        users: (state) => state.users,
+        products: (state) => state.products,
         subtotalCart: (state) => {
             let subTotal = 0;
             Object.values(state.cart).forEach((item) => {
@@ -38,8 +43,11 @@ export default createStore({
     },
     mutations: {
         setUser: (state, user) => (state.user = user),
+        setAdmin: (state, admin) => (state.admin = admin),
         loggedIn: (state) => (state.isLoggedIn = true),
+        adminLoggedIn: (state) => (state.isAdminLoggedIn = true),
         addProduct: (state, product) => (state.products[product.id] = product),
+        addUser: (state, user) => (state.users[user.id] = user),
         addCategoryData: (state, data) => (state.categoryData[data.id] = data),
         addToCart: (state, product) => {
             state.cart[product.id] = {
@@ -71,15 +79,7 @@ export default createStore({
         clearCart: (state) => (
             (state.cart = {}), localStorage.removeItem("cart")
         ),
-        registerUser: (state, user) => {
-            fetch(`http://localhost:3000/users/`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(user),
-            });
-        },
+
         editUser: (state, user) => {
             /* filter empty fields from user */
             const filteredUser = Object.keys(user).reduce((acc, key) => {
@@ -89,8 +89,10 @@ export default createStore({
                 return acc;
             }, {});
 
-            /* Merge two objects */
-            state.user = { ...state.user, ...filteredUser };
+            state.user = {
+                ...state.user,
+                ...filteredUser,
+            };
 
             fetch(`http://localhost:3000/users/${state.user.id}`, {
                 method: "PATCH",
@@ -112,22 +114,41 @@ export default createStore({
         },
     },
     actions: {
+        async registerUser({ commit }, user) {
+            user.role = "Costumer";
+
+            console.log(user);
+
+            fetch(`http://localhost:3000/users/`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(user),
+            });
+        },
         async fetchProducts({ commit }) {
             let products = await fetch(`http://localhost:3000/products`);
 
-            // let products = await fetch(
-            //     `http://localhost:3000/products`,
-            //     {
-            //         method: "POST",
-            //         body: JSON.stringify(),
-            //     }
-            // );
             let data = await products.json();
 
-            await new Promise((resolve) => setTimeout(resolve, 500));
+            await new Promise((resolve) => setTimeout(resolve, 1000));
 
             for (const item of data) {
                 commit("addProduct", item);
+            }
+
+            return data;
+        },
+        async fetchUsers({ commit }) {
+            let users = await fetch(`http://localhost:3000/users`);
+
+            let data = await users.json();
+
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+
+            for (const item of data) {
+                commit("addUser", item);
             }
 
             return data;
@@ -150,6 +171,10 @@ export default createStore({
             );
             let data = await user.json();
 
+            if (data.length === 0) {
+                throw new Error("Invalid credentials");
+            }
+
             if (data[0].password === userData.password) {
                 commit("setUser", data[0]);
                 commit("loggedIn");
@@ -160,6 +185,25 @@ export default createStore({
             }
 
             throw new Error("Invalid credentials");
+        },
+        async findAdminData({ commit }, userData) {
+            let user = await fetch(
+                `http://localhost:3000/users?email=${userData.email}`
+            );
+            let data = await user.json();
+
+            if (data[0].password === userData.password) {
+                commit("adminLoggedIn");
+                commit("setAdmin", data[0]);
+
+                localStorage.setItem("admin", JSON.stringify(data[0]));
+
+                router.push("/admin/dashboard");
+
+                return true;
+            }
+
+            throw new Error("Invalid credentials or user isn't an admin");
         },
         async finishOrder({ state, getters, commit }) {
             let order = await fetch(`http://localhost:3000/orders`, {
